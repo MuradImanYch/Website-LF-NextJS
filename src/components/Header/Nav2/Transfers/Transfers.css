@@ -1,0 +1,36 @@
+nav .transfers {
+    display: none;
+}
+nav .transfers ul {
+    flex-direction: column;
+    background: rgba(0, 94, 180, 0.9);
+    padding: 0;
+    height: 70px;
+    display: none;
+}
+nav .transfers ul li a {
+    justify-content: center;
+}
+nav .transfers:hover {
+    background: rgba(0, 94, 180, 1);
+}
+nav .transfers:hover ul {
+    display: flex;
+}
+nav .transfers:hover img {
+    display: none;
+}
+
+
+@media (min-width: 700px) {
+    nav .transfers {
+        display: block;
+        position: relative;
+    }
+    nav .transfers img {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

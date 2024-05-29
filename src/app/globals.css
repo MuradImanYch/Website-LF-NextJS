@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: #000;
+}
+body {
+    background: #EDEFF4;
+    height: 1000vh;
 }
 .container {
     margin: auto;
@@ -10,16 +15,20 @@
 .headerMain {
     width: 100%;
 }
+main {
+    margin: 100px 0 0 0;
+}
 main .wrap {
     padding: 5px 10px;
 }
-body {
-    background: #EDEFF4;
+li {
+    list-style: none;
 }
+
 
 @media (min-width: 1024px) {
     .container {
-        width: 1000px;
+        width: 1020px;
         display: flex;
     }
 }

@@ -1,0 +1,23 @@
+header .burger {
+    height: 100%;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 12px 0 0;
+}
+header .wrap .burger span {
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #fff;
+    transition: 0.4s;
+}
+
+
+@media (min-width: 1024px) {
+    header .burger {
+        display: none;
+    }
+}

@@ -2,6 +2,7 @@ import "./globals.css";
 import { Roboto } from 'next/font/google';
 import Header from '@/components/Header/Header';
 import Navigation from '@/components/Navigation/Navigation';
+import Providers from "@/redux/Provider";
 
 const roboto = Roboto({
   subsets: ['cyrillic'],
@@ -18,17 +19,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="container">
-          <Navigation />
-          <div className="headerMain">
-            <Header />
-            <main>
-              <div className="wrap">
-              {children}
-              </div>
-            </main>
+        <Providers>
+          <div className="container">
+            <Navigation />
+            <div className="headerMain">
+              <Header />
+              <main>
+                <div className="wrap">
+                {children}
+                </div>
+              </main>
+            </div>
           </div>
-        </div>
+        </Providers>
         <script src="https://kit.fontawesome.com/5f439b4246.js" crossOrigin="anonymous"></script>
       </body>
     </html>

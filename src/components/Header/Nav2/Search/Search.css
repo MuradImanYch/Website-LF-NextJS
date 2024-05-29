@@ -1,0 +1,39 @@
+header .nav .search-wrap {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    margin: 0 5px 0 0;
+    position: relative;
+}
+header .nav .search-wrap:hover {
+    background: rgba(1, 75, 145, 0.7);
+    transition: 0.2s;
+}
+header .nav .search-wrap input {
+    position: absolute;
+    right: 100%;
+    height: 30px;
+    padding: 0 5px;
+    outline: none;
+    width: 0;
+    opacity: 0;
+}
+header .nav .search-wrap:hover input {
+    transition: 0.3s;
+    width: 250px;
+    opacity: 1;
+    height: 85%;
+}
+
+
+@media (min-width: 1024px) {
+    header .nav .search-wrap {
+        width: 50px;
+    }    
+    header .nav .search-wrap {
+        margin: 0 10px 0 0;
+    }
+}
