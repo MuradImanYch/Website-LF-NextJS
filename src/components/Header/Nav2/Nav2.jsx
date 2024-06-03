@@ -1,9 +1,10 @@
 'use client'
 
 import './Nav2.css';
+import Link from 'next/link';
+
 import Others from './Others/Others';
 import Transfers from './Transfers/Transfers';
-
 import Search from './Search/Search';
 
 const Nav2 = () => {
@@ -11,10 +12,10 @@ const Nav2 = () => {
         <div>
             <nav className="nav">
                 <ul>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Матчи</a></li>
+                    <li><Link href="#">Новости</Link></li>
+                    <li><Link href="#">Матчи</Link></li>
                     <Transfers />
-                    <li><a href="#">Трансляции</a></li>
+                    <li className='broadcasts'><Link href="#">Трансляции</Link></li>
                     <Others />
                 </ul>
                 <div className="right-panel">

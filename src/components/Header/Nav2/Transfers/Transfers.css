@@ -8,7 +8,10 @@ nav .transfers ul {
     height: 70px;
     display: none;
 }
-nav .transfers ul li a {
+nav .transfers ul li {
+    width: 100%;
+}
+nav .transfers ul li > * {
     justify-content: center;
 }
 nav .transfers:hover {

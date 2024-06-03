@@ -1,15 +1,16 @@
 import Image from 'next/image';
 import './Transfers.css';
+import Link from 'next/link';
 
 import arrowBottom from '../../../../../public/assets/ico/arrow-bottom.webp';
 
 const Transfers = () => {
     return (
         <li className="transfers">
-            <a href="#">Трансферы <Image placeholder={'blur'} width={10} src={arrowBottom} alt="Развернуть" title="Развернуть" /></a>
+            <div href="#">Трансферы <Image width={10} src={arrowBottom} alt="Развернуть" title="Развернуть" /></div>
             <ul>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Переходы</a></li>
+                <li><Link href="#">Новости</Link></li>
+                <li><Link href="#">Список</Link></li>
             </ul>
         </li>
     );

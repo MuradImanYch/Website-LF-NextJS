@@ -30,7 +30,7 @@ const Search = () => {
     return (
         <div className="search-wrap" onMouseLeave={clearSearchParams} onMouseEnter={clearSearchParams} >
             <input onKeyDown={sendSearchParamsWithKey} placeholder='Поиск по сайту' onChange={(e) => {setSearchParams(e.target.value)}} type="text" className='search' />
-            <Image onClick={sendSearchParam} src={search} placeholder={'blur'} width={25} alt="Поиск" title="Поиск" />
+            <Image onClick={sendSearchParam} src={search} width={25} alt="Поиск" title="Поиск" />
         </div>
     );
 };

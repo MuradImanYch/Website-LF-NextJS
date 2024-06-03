@@ -14,13 +14,16 @@ header nav ul {
 header nav ul li {
     height: 100%;
 }
-header nav ul li a {
+header nav ul li > * {
     display: flex;
     height: 100%;
     align-items: center;
     font-size: 0.85em;
     color: #fff;
     padding: 0 10px;
+}
+nav ul li div {
+    cursor: pointer;
 }
 header nav ul li a:hover {
     transition: 0.2s;
@@ -29,12 +32,15 @@ header nav ul li a:hover {
 header .nav .right-panel {
     height: 100%;
 }
+header nav ul .broadcasts a {
+    background: #f02d54;
+}
 
 @media (min-width: 1024px) {
     header nav {
         height: 50px;
     }
-    header nav ul li a {
+    header nav ul li > * {
         font-size: 1em;
         padding: 0 15px;
     } 

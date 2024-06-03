@@ -1,12 +1,13 @@
 import './Header.css';
-import logo from '../../../public/assets/ico/logo.webp';
 import Image from 'next/image';
 import Link from 'next/link';
-import signIn from '../../../public/assets/ico/sign-in.webp';
 import ad from '../../../public/assets/img/ad.png';
 import Burger from './Burger/Burger';
-import settings from '../../../public/assets/ico/settings.webp';
 import Nav2 from './Nav2/Nav2';
+
+import logo from '../../../public/assets/ico/logo.webp';
+import settings from '../../../public/assets/ico/settings.webp';
+import signIn from '../../../public/assets/ico/sign-in.webp';
 
 const Header = () => {
     return (

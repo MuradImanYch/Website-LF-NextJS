@@ -16,7 +16,10 @@ nav .others ul {
     margin: 0 0 0 -30px;
     width: 100px;
 }
-nav .others ul li a {
+nav .others ul li {
+    width: 100%;
+}
+nav .others ul li > * {
     justify-content: center;
     font-size: 0.8em;
     text-align: center;
@@ -37,7 +40,7 @@ nav .others:hover img {
     nav .others .transfer-news, nav .others .transfer-transfers {
         display: none;
     }
-    nav .others ul li a {
+    nav .others ul li > * {
         padding: 8px 10px;
         font-size: 0.9em;
     }
