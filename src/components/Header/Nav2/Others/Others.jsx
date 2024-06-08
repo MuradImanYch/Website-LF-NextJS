@@ -9,8 +9,8 @@ const Others = () => {
         <li className="others">
             <div href="#">Ещё <Image width={10} src={arrowBottom} alt="Развернуть" title="Развернуть" /></div>
             <ul>
-                <li className="transfer-news"><Link href="#">Новости трансферов</Link></li>
-                <li className="transfer-transfers"><Link href="#">Список трансферов</Link></li>
+                <li className="transfer-news"><Link href="/transfers-news">Новости трансферов</Link></li>
+                <li className="transfer-transfers"><Link href="/transfers-list">Список трансферов</Link></li>
                 <li><Link href="#">Оффтопы</Link></li>
                 <li><Link href="#">Блоги</Link></li>
                 <li><Link href="#">Видео</Link></li>

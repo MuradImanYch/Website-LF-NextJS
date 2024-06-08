@@ -4,10 +4,13 @@ import './Navigation.css';
 import Image from 'next/image';
 import logo from '../../../public/assets/ico/logo.webp';
 import Link from 'next/link';
-import signIn from '../../../public/assets/ico/sign-in-mob.webp';
-import settings from '../../../public/assets/ico/settings-mob.png';
 import { useSelector } from 'react-redux';
 import config from '@/conf.json';
+import { useState } from 'react';
+
+import signIn from '../../../public/assets/ico/sign-in-mob.webp';
+import settings from '../../../public/assets/ico/settings-mob.png';
+import arrowBottom from '../../../public/assets/ico/arrow-bottom.webp';
 
 const Navigation = () => {
     const isToggled = useSelector(state => state.toggle.value);
@@ -19,6 +22,23 @@ const Navigation = () => {
     const filteredTopTournaments = config.tournaments.filter(e => 
         topTournaments.includes(e.name.ru)
     );
+    const otherTournaments = ['Европа', 'Мир'];
+    const filteredOtherTournaments = config.tournaments.filter(e => 
+        otherTournaments.includes(e.name.ru)
+    );
+
+    const [visibleSubMenus, setVisibleSubMenus] = useState({
+        topTournaments: Array(filteredTopTournaments.length).fill(false),
+        otherTournaments: Array(filteredOtherTournaments.length).fill(false),
+        CISTournaments: Array(filteredCISTournaments.length).fill(false)
+    });
+
+    const toggleSubMenu = (category, index) => {
+        setVisibleSubMenus(prev => ({
+            ...prev,
+            [category]: prev[category].map((isVisible, i) => (i === index ? !isVisible : isVisible))
+        }));
+    };
 
     return (
         <nav style={isToggled ? {left: '0'} : {left: '-100%'}}>
@@ -33,24 +53,66 @@ const Navigation = () => {
                 <h1>Актуальные новости, прямые трансляции матчей, результаты, расписание, турнирная таблица</h1>
                 <ul>
                     <span className="nav-title">Популярные</span>
-                    {filteredTopTournaments.map((e, i) => (
-                        <li key={'country' + i}>
-                            <Link href={'#'}>
-                                <Image src={e.flag} width={22} height={16} alt={'флаг ' + e.name.ru} title={e.name.ru} />
-                                {e.name.ru}
-                            </Link>
+                    {filteredTopTournaments.map((e, i) => {
+                        let countryPathname = `/tournament/${e.name.en.replace(/\s+/g, '-').toLowerCase()}`;
+                        return <li key={e.code}>
+                            <div className="country-item">
+                                <Link href={countryPathname}>
+                                    <Image src={e.flag} width={22} height={16} alt={'флаг ' + e.name.ru} title={e.name.ru} />
+                                    {e.name.ru}
+                                </Link>
+                                <button onClick={() => toggleSubMenu('topTournaments', i)}>
+                                    <Image width={12} src={arrowBottom} alt='Стрелка' title='Развернуть' />
+                                </button>
+                            </div>
+                            <ul className="sub-menu" style={{ display: visibleSubMenus.topTournaments[i] ? 'block' : 'none' }}>
+                                {e.leagues.map(e => {
+                                    return <li key={e.id}><Link href={`${countryPathname}/${e.name.en.replace('.', '').replace('-', '').replace(/\s+/g, '-').toLowerCase().replace('ü', 'u').replace('ə', 'a').replace('ö', 'o').replace('ğ', 'gh').replace('ı', 'i').replace('ç', 'ch').replace('ş', 'sh').replace('--', '')}`}><Image src={e.logo} width={17} height={17} layout="intrinsic" alt={'лого ' + e.name.ru} title={e.name.ru} /> {e.name.ru}</Link></li>
+                                })}
+                            </ul>
                         </li>
-                    ))}
+                    })}
+                    <span className="nav-title">ДРУГИЕ</span>
+                    {filteredOtherTournaments.map((e, i) => {
+                        let countryPathname = `/tournament/${e.name.en.replace(/\s+/g, '-').toLowerCase()}`;
+                        return <li key={e.code}>
+                            <div className="country-item">
+                                <Link href={countryPathname}>
+                                    <Image src={e.flag} width={22} height={16} alt={'флаг ' + e.name.ru} title={e.name.ru} />
+                                    {e.name.ru}
+                                </Link>
+                                <button onClick={() => toggleSubMenu('otherTournaments', i)}>
+                                    <Image width={12} src={arrowBottom} alt='Стрелка' title='Развернуть' />
+                                </button>
+                            </div>
+                            <ul className="sub-menu" style={{ display: visibleSubMenus.otherTournaments[i] ? 'block' : 'none' }}>
+                                {e.leagues.map(e => {
+                                    return <li key={e.id}><Link href={`${countryPathname}/${e.name.en.replace('.', '').replace('-', '').replace(/\s+/g, '-').toLowerCase().replace('ü', 'u').replace('ə', 'a').replace('ö', 'o').replace('ğ', 'gh').replace('ı', 'i').replace('ç', 'ch').replace('ş', 'sh')}`}><Image src={e.logo} width={17} height={17} layout="intrinsic" alt={'лого ' + e.name.ru} title={e.name.ru} /> {e.name.ru}</Link></li>
+                                })}
+                            </ul>
+                        </li>
+                    })}
                     <span className="nav-title">СНГ</span>
-                    {filteredCISTournaments.map((e, i) => (
-                        <li key={'country' + i}>
-                            <Link href={'#'}>
-                                <Image src={e.flag} width={22} height={20} alt={'флаг ' + e.name.ru} title={e.name.ru} />
-                                {e.name.ru}
-                            </Link>
+                    {filteredCISTournaments.map((e, i) => {
+                        let countryPathname = `/tournament/${e.name.en.replace(/\s+/g, '-').toLowerCase()}`;
+                        return <li key={e.code}>
+                            <div className="country-item">
+                                <Link href={countryPathname}>
+                                    <Image src={e.flag} width={22} height={16} alt={'флаг ' + e.name.ru} title={e.name.ru} />
+                                    {e.name.ru}
+                                </Link>
+                                <button onClick={() => toggleSubMenu('CISTournaments', i)}>
+                                    <Image width={12} src={arrowBottom} alt='Стрелка' title='Развернуть' />
+                                </button>
+                            </div>
+                            <ul className="sub-menu" style={{ display: visibleSubMenus.CISTournaments[i] ? 'block' : 'none' }}>
+                                {e.leagues.map(e => {
+                                    return <li key={e.id}><Link href={`${countryPathname}/${e.name.en.replace('.', '').replace('-', '').replace(/\s+/g, '-').toLowerCase().replace('ü', 'u').replace('ə', 'a').replace('ö', 'o').replace('ğ', 'gh').replace('ı', 'i').replace('ç', 'ch').replace('ş', 'sh')}`}><Image src={e.logo} width={17} height={17} layout="intrinsic" alt={'лого ' + e.name.ru} title={e.name.ru} /> {e.name.ru}</Link></li>
+                                })}
+                            </ul>
                         </li>
-                    ))}
-                    <Link href="#">Все турниры</Link>
+                    })}
+                    <Link href="/tournaments">Все турниры</Link>
                 </ul>
             </div>
         </nav>

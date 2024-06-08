@@ -12,10 +12,10 @@ const Nav2 = () => {
         <div>
             <nav className="nav">
                 <ul>
-                    <li><Link href="#">Новости</Link></li>
-                    <li><Link href="#">Матчи</Link></li>
+                    <li><Link href="/news">Новости</Link></li>
+                    <li><Link href="/matches">Матчи</Link></li>
                     <Transfers />
-                    <li className='broadcasts'><Link href="#">Трансляции</Link></li>
+                    <li className='broadcasts'><Link href="/broadcasts">Трансляции</Link></li>
                     <Others />
                 </ul>
                 <div className="right-panel">

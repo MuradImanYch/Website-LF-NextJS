@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 main {
-    margin: 100px 0 0 0;
+    margin: 110px 0 0 0;
 }
 main .wrap {
     padding: 5px 10px;
@@ -30,6 +30,9 @@ li {
     .container {
         width: 1020px;
         display: flex;
+    }
+    main {
+        margin: 70px 0 0 0;
     }
 }
 
