@@ -16,9 +16,9 @@ const Header = () => {
                 <div className="ad-banner">
                     <Image placeholder={'blur'} src={ad} alt="Банер" title="Банер" />
                 </div>
-                <div className='sign-in'><Link href="#"><Image height={30} src={signIn} alt="Вход" title="Войти" /> <span>Войти</span></Link></div>
+                <div className='sign-in'><Link href="/login"><Image height={30} src={signIn} alt="Вход" title="Войти" /> <span>Войти</span></Link></div>
                 <div className="settings">
-                    <Image src={settings} height={30} alt='Настройки' title='Настройки' />
+                    <Link href={'/settings'}><Image src={settings} height={30} alt='Настройки' title='Настройки' /></Link>
                 </div>
                 <div className="socNet">
                     <a title="Вконтакте" href="https://vk.com/leg.football" target="__blank"><i className="fab fa-vk"></i></a>

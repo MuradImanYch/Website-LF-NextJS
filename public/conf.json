@@ -505,7 +505,7 @@
         "en": "England"
       },
       "code": "GB",
-      "flag": "https://media.api-sports.io/flags/gb.svg",
+      "flag": "/assets/ico/en.webp",
       "leagues": [
         {
           "id": 39,

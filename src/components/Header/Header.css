@@ -5,6 +5,7 @@ header {
     background: rgba(0, 94, 180, 0.9);
     position: fixed;
     top: 0;
+    z-index: 9998;
 }
 header .wrap {
     display: flex;
@@ -54,7 +55,8 @@ header .wrap .settings {
     header {
         height: 100px;
         background: transparent;
-        position: static;
+        position: absolute;
+        width: 850px !important;
     }
     header .wrap .logo {
         display: none;
@@ -83,7 +85,16 @@ header .wrap .settings {
     }
 }
 
+@media (min-width: 1100px) {
+    header {
+        width: 1014px !important;
+    }
+}
+
 @media (min-width: 1200px) {
+    header {
+        width: 1110px !important;
+    }
     header .socNet {
         margin: 0 40px 0 0;
     }

@@ -9,8 +9,11 @@ const toggleSlice = createSlice({
     toggle: state => {
       state.value = !state.value;
     },
+    setFalse: state => {
+      state.value = false;
+    },
   },
 });
 
-export const { toggle } = toggleSlice.actions;
+export const { toggle, setFalse } = toggleSlice.actions;
 export default toggleSlice.reducer;

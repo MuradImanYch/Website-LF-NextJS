@@ -1,0 +1,119 @@
+.head {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 10px 20px 5px 20px;
+    min-height: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.head .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.head .league-name {
+    display: flex;
+    align-items: center;
+}
+.head img {
+    margin: 0 8px;
+}
+.head .slash {
+    margin: 0 5px 0 10px;
+}
+.head a, .content ul li a {
+    color: rgba(0, 94, 180, 0.9);
+}
+.content {
+    margin: 20px auto;
+}
+.content .right {
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+.content .left .head, .content .right .head {
+    display: flex;
+    justify-content: center;
+}
+.content ul li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+}
+.content ul li:not(.content ul li:first-child) {
+    border-top: 2px solid #ccc;
+}
+.content ul li > a {
+    margin: 0 0 0 10px;
+    font-size: 0.85em;
+}
+.content .left {
+    margin: 0 0 30px 0;
+}
+.content .left .item {
+    border: 2px solid #ccc;
+}
+.content .left .item:not(.content .left .item:first-child) {
+    margin: 30px 0 0 0;
+}
+.content .left ul li {
+    height: 35px;
+    padding: 0;
+}
+.content .left ul li > a {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+.content .left ul li > a:hover {
+    background: rgba(0, 94, 180, 0.9);
+}
+.content .left ul li > a:hover span {
+    color: #fff;
+}
+.content .left ul li a span {
+    font-size: 0.85em;
+}
+.right input {
+    margin: 10px 0;
+    height: 30px;
+}
+
+
+@media (min-width: 434px) {
+    .head {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .head {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content .right {
+        width: 330px;
+    }
+    .content .right .head {
+        width: 350px;
+    }
+    .content .left {
+        width: 68%;
+        margin: 0;
+    }
+    .content .left ul li a span {
+        font-size: 1em;
+    }
+}

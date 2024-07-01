@@ -11,13 +11,13 @@ const Others = () => {
             <ul>
                 <li className="transfer-news"><Link href="/transfers-news">Новости трансферов</Link></li>
                 <li className="transfer-transfers"><Link href="/transfers-list">Список трансферов</Link></li>
-                <li><Link href="#">Оффтопы</Link></li>
-                <li><Link href="#">Блоги</Link></li>
-                <li><Link href="#">Видео</Link></li>
-                <li><Link href="#">Рейтинг УЕФА</Link></li>
-                <li><Link href="#">Рейтинг ФИФА</Link></li>
-                <li><Link href="#">ТВ Расписание</Link></li>
-                <li><Link href="#">Котироаки</Link></li>
+                <li><Link href="/offtop-news">Оффтопы</Link></li>
+                <li><Link href="/blogs">Блоги</Link></li>
+                <li><Link href="/videos">Видео</Link></li>
+                <li><Link href="/uefa-ranking ">Рейтинг УЕФА</Link></li>
+                <li><Link href="/fifa-ranking ">Рейтинг ФИФА</Link></li>
+                <li><Link href="/tv-schedule ">ТВ Расписание</Link></li>
+                <li><Link href="/odds">Котировки</Link></li>
             </ul>
         </li>
     );

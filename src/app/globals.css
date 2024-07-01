@@ -4,6 +4,8 @@
     padding: 0;
     text-decoration: none;
     color: #000;
+    text-underline-offset: 3px;
+    height: auto;
 }
 body {
     background: #EDEFF4;
@@ -24,6 +26,15 @@ main .wrap {
 li {
     list-style: none;
 }
+.head {
+    min-height: 45px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
 @media (min-width: 1024px) {
@@ -32,7 +43,10 @@ li {
         display: flex;
     }
     main {
-        margin: 70px 0 0 0;
+        margin: 170px 0 0 0;
+    }
+    .head {
+        justify-content: flex-start;
     }
 }
 
