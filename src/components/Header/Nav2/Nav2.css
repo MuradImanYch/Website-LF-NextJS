@@ -48,3 +48,17 @@ header nav ul .broadcasts a {
         padding: 0 10px;
     }
 }
+
+
+@media (min-width: 1200px) {
+    header nav {
+        width: 995px !important;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    header nav {
+        width: 100% !important;
+    }
+}

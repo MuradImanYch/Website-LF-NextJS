@@ -126,7 +126,7 @@ nav .wrap ul li .sub-menu {
 
 @media (min-width: 1024px) {
     nav {
-        width: 220px;
+        width: 170px;
         position: static;
     }
     nav .wrap {
@@ -173,11 +173,16 @@ nav .wrap ul li .sub-menu {
     }
 }
 
+
 @media (min-width: 1200px) {
+    nav {
+        width: 220px;
+    }
     nav .wrap .sign-in-settings {
         display: none;
     }
 }
+
 
 @media (max-width: 1023px) {
     nav .wrap ul {

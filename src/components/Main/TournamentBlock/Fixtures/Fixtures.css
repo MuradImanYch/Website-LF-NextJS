@@ -1,0 +1,27 @@
+.fixtures {
+    background: #000;
+    height: 300px;
+}
+
+
+@media (min-width: 1024px) {
+    .fixtures {
+        width: 230px;
+        height: 200px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .fixtures {
+        width: 300px;
+        height: 230px;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .fixtures {
+        width: 350px;
+    }
+}
