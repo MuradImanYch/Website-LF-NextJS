@@ -1,5 +1,33 @@
 .tournamentBlock {
-    background: #000;
     margin: 50px 0 0 0;
     height: 400px;
+}
+.tournamentBlock .name {
+    margin: 0 0 0 15px;
+}
+.tournamentBlock .wrap {
+    padding-top: 10px;
+}
+.tournamentBlock .wrap .col {
+    margin: 0 0 50px 0;
+}
+.tournamentBlock .wrap .col > a {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1024px) {
+    .tournamentBlock .head {
+        justify-content: flex-start;
+    }
+    .tournamentBlock .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tournamentBlock .wrap .col {
+        margin: 0;
+    }
 }

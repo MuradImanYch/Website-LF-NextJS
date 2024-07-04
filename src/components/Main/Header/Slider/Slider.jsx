@@ -9,13 +9,13 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 const Slider = () => {
-    const[img, setImg] = useState([]);
+    const[news, setNews] = useState([]);
     const sliderRef = useRef(null);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/photos')
           .then(response => response.json())
-          .then(json => setImg(json))
+          .then(json => setNews(json))
     }, []);
 
     const settings = {
@@ -46,9 +46,9 @@ const Slider = () => {
     return (
             <div className="main-slider-container">
                 <SlickSlider ref={sliderRef} {...settings}>
-                    {img.slice(0, 5).map((e, i) => {
+                    {news.slice(0, 5).map((e, i) => {
                         return <div key={i} className="slider-item">
-                            <Link href={'#'}><Image title='title' alt='alt' width={800} height={800} src={e.url} /></Link>
+                            <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={e.url} /></Link>
                             <Link className='preview-title' href="#">{e.title}</Link>
                         </div>
                     })}

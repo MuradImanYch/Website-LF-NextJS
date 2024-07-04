@@ -35,6 +35,17 @@ li {
     flex-wrap: wrap;
     justify-content: center;
 }
+.slick-slider, .slick-list, .slick-track, .slick-slide {
+    height: 100%;
+}
+::-webkit-scrollbar { /* main scrollbar */
+    width: 3px !important;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px !important;
+    border-radius: 0 !important;
+    background: rgba(0, 94, 180, 0.8) !important; 
+ }
 
 
 @media (min-width: 1024px) {

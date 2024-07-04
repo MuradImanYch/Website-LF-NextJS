@@ -16,15 +16,15 @@ import arrowBottom from '../../../public/assets/ico/arrow-bottom.webp';
 const Navigation = () => {
     const isToggled = useSelector(state => state.toggle.value);
     const dispatch = useDispatch();
-    const CISTournaments = ["Армения", "Азербайджан", "Беларусь", "Эстония", "Грузия", "Казахстан", "Киргизия", "Латвия", "Литва", "Молдова", "Россия", "Таджикистан", "Туркменистан", "Украина", "Узбекистан"];
+    const CISTournaments = config.CISTournaments;
     const filteredCISTournaments = config.tournaments.filter(e => 
         CISTournaments.includes(e.name.ru)
     );
-    const topTournaments = ['Англия', 'Испания', 'Италия', 'Германия', 'Франция', "Португалия", "Нидерланды", "Турция", "Бельгия"];
+    const topTournaments = config.topTournaments;
     const filteredTopTournaments = config.tournaments.filter(e => 
         topTournaments.includes(e.name.ru)
     );
-    const otherTournaments = ['Европа', 'Мир'];
+    const otherTournaments = config.otherTournaments;
     const filteredOtherTournaments = config.tournaments.filter(e => 
         otherTournaments.includes(e.name.ru)
     );

@@ -5,31 +5,41 @@ import Link from 'next/link';
 const Collage = async () => {
     let news = [];
 
-    await fetch('https://jsonplaceholder.typicode.com/photos')
-    .then(response => response.json())
-    .then(json => news = json)
+    async function fetchNews() {
+        try {
+          const res = await fetch('http://78.46.254.73:8080/news/allNews');
+          const data = await res.json();
+          
+          return data;
+        } catch (err) {
+          console.error(err);
+        }
+    }
+
+    const data = await fetchNews();
+    const reversedData = await data.reverse();
 
     return (
         <div className="collage">
             <div id="item-0" className="collage-item">
-                <Link href={'#'}><Image title='title' alt='alt' width={800} height={800} src={news[0]?.url} /></Link>
-                <Link className='preview-title' href="#">{news[0]?.title}</Link>
+                <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={reversedData[0].img} /></Link>
+                <Link className='preview-title' href="#">{reversedData[0].title}</Link>
             </div>
             <div id="item-1" className="collage-item">
-                <Link href={'#'}><Image title='title' alt='alt' width={800} height={800} src={news[1]?.url} /></Link>
-                <Link className='preview-title' href="#">{news[1]?.title}</Link>
+                <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={reversedData[1].img} /></Link>
+                <Link className='preview-title' href="#">{reversedData[1].title}</Link>
             </div>
             <div id="item-2" className="collage-item">
-                <Link href={'#'}><Image title='title' alt='alt' width={800} height={800} src={news[2]?.url} /></Link>
-                <Link className='preview-title' href="#">{news[2]?.title}</Link>
+                <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={reversedData[2].img} /></Link>
+                <Link className='preview-title' href="#">{reversedData[2].title}</Link>
             </div>
             <div id="item-3" className="collage-item">
-                <Link href={'#'}><Image title='title' alt='alt' width={800} height={800} src={news[3]?.url} /></Link>
-                <Link className='preview-title' href="#">{news[3]?.title}</Link>
+                <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={reversedData[3].img} /></Link>
+                <Link className='preview-title' href="#">{reversedData[3].title}</Link>
             </div>
             <div id="item-4" className="collage-item">
-                <Link href={'#'}><Image title='title' alt='alt' width={1000} height={1000} src={news[4]?.url} /></Link>
-                <Link className='preview-title' href="#">{news[4]?.title}</Link>
+                <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={reversedData[4].img} /></Link>
+                <Link className='preview-title' href="#">{reversedData[4].title}</Link>
             </div>
         </div>
     );

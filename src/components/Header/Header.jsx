@@ -14,7 +14,7 @@ const Header = () => {
         <header>
             <div className="wrap">
                 <div className="ad-banner">
-                    <Image placeholder={'blur'} src={ad} alt="Банер" title="Банер" />
+                    <Image placeholder={'empty'} src={ad} alt="Банер" title="Банер" />
                 </div>
                 <div className='sign-in'><Link href="/login"><Image height={30} src={signIn} alt="Вход" title="Войти" /> <span>Войти</span></Link></div>
                 <div className="settings">
