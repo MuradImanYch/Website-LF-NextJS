@@ -1,0 +1,88 @@
+.transfer-list {
+    margin: 50px 0 0 0;
+}
+.transfer-list .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    height: 60px;
+}
+.transfer-list .imgName {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.transfer-list .imgName img {
+    margin: 0 5px 0 0;
+}
+.transfer-list .item span {
+    font-size: 0.6em;
+}
+.transfer-list .item .from-to {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.transfer-list .item .from-to img {
+    margin: 0 10px;
+}
+.transfer-list .item .price {
+    font-weight: bold;
+    color: green;
+}
+.transfer-list .from-to, .transfer-list .date, .transfer-list .price {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0 -20px 0 0;
+}
+
+
+@media (min-width: 400px) {
+    .transfer-list .item span {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 500px) {
+    .transfer-list .imgName > img {
+        margin: 0 15px 0 0;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .transfer-list .item span {
+        font-size: 0.9em;
+    }
+    .transfer-list .from-to, .transfer-list .date, .transfer-list .price {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .transfer-list {
+        margin: 0;
+        width: 50%;
+    }
+    .transfer-list .item .date {
+        margin: 0 20px;
+    }
+    .transfer-list .item .name {
+        margin: 0;
+    }
+    .transfer-list .item span {
+        font-size: 0.7em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .transfer-list {
+        width: 55%;
+    }
+    .transfer-list .item span {
+        font-size: 0.9em;
+    }
+}

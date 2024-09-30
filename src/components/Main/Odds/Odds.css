@@ -1,0 +1,62 @@
+.odds .wrap h4 {
+    font-weight: normal;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.odds .wrap .item {
+    margin: 20px 0;
+    border-bottom: 1px solid silver;
+}
+.odds .wrap .items {
+    display: flex;
+    justify-content: space-between;
+}
+.odds .wrap .items > div {
+    display: flex;
+    align-items: center;
+}
+.odds .wrap .item .center {
+    flex-direction: column;
+}
+.odds .wrap .item > div span {
+    font-size: 0.85em;
+}
+.odds .wrap .item .left, .odds .wrap .item .right {
+    width: 80px;
+}
+.odds .wrap .item .left span, .odds .wrap .item .right span {
+    margin: 0 15px;
+}
+.odds .wrap .item .right {
+    justify-content: flex-end;
+}
+.odds .wrap .item > div span {
+    text-align: center;
+}
+.odds .wrap .item .center .date {
+    font-size: 0.75em;
+    margin: 4px 0 0 0;
+}
+.odds .odds-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.odds .odds-wrap .item {
+    display: flex;
+    flex-direction: column;
+}
+.odds .odds-wrap .item .param {
+    font-size: 0.7em;
+    margin: 5px 0 2px 0;
+}
+.odds .odds-wrap .item .rate {
+    font-weight: bold;
+}
+
+
+@media (min-width: 1024px) {
+    .odds {
+        width: 50%;
+    }
+}

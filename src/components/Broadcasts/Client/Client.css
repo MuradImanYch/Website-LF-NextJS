@@ -1,0 +1,28 @@
+.broadcast-single-page .single-page .threads {
+    display: flex;
+    margin: 0 0 10px 0;
+    flex-wrap: wrap;
+}
+.broadcast-single-page .single-page .threads li {
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+.broadcast-single-page .single-page .threads li.current {
+    background: rgba(0, 94, 180, 0.8);
+    color: #fff;
+}
+.broadcast-single-page .single-page .threads li img {
+    position: absolute;
+    top: -7px;
+    right: 0px;
+}
+
+
+@media (min-width: 1024px) {
+    .broadcast-single-page .single-page .video {
+        width: 80%;
+    }
+}

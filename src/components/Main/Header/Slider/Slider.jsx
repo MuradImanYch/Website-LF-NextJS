@@ -7,15 +7,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import cyrillicToTranslit from 'cyrillic-to-translit-js';
 
-const Slider = () => {
+const Slider = ({mobileNews}) => {
     const[news, setNews] = useState([]);
     const sliderRef = useRef(null);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/photos')
-          .then(response => response.json())
-          .then(json => setNews(json))
+        setNews(mobileNews);
     }, []);
 
     const settings = {
@@ -44,16 +43,25 @@ const Slider = () => {
     };
 
     return (
-            <div className="main-slider-container">
+            <section className="main-slider-container">
                 <SlickSlider ref={sliderRef} {...settings}>
-                    {news.slice(0, 5).map((e, i) => {
-                        return <div key={i} className="slider-item">
-                            <Link href={'#'}><Image placeholder={'empty'} title='title' alt='alt' width={800} height={800} src={e.url} /></Link>
-                            <Link className='preview-title' href="#">{e.title}</Link>
-                        </div>
+                    {news && news.slice(0, 5).map(e => {
+                        let date = new Date(e.date);
+                        let day = String(date.getDate()).length < 2 ? '0' + String(date.getDate()) : String(date.getDate());
+                        let month = String(date.getMonth() + 1).length < 2 ? '0' + String(date.getMonth() + 1) : String(date.getMonth() + 1);
+                        let year = date.getFullYear();
+                        let hours = String(date.getHours()).length < 2 ? '0' + String(date.getHours()) : String(date.getHours());
+                        let minutes = String(date.getMinutes()).length < 2 ? '0' + String(date.getMinutes()) : String(date.getMinutes());
+
+                        return <article key={e.id} className="slider-item">
+                            <Link href={`/news/read/${e.id + '-' + cyrillicToTranslit().transform(e.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={e.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={e.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={e.img} /></Link>
+                            <h2><Link className='preview-title' href={`/news/read/${e.id + '-' + cyrillicToTranslit().transform(e.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{e.title}</Link></h2>
+                            <Link href={'/tags/search/' + e.category} className="tag">#{e.category}</Link>
+                            <span className="date">{day + '-' + month + '-' + year + ' | ' + hours + ':' + minutes}</span>
+                        </article>
                     })}
                 </SlickSlider>
-            </div>
+            </section>
     );
 };
 

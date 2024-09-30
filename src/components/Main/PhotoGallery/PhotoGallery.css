@@ -1,0 +1,18 @@
+.photo-gallery .gallery {
+    margin: 10px 0 0 0;
+    column-count: 4; /* Количество колонок */
+    column-gap: 4px; /* Расстояние между колонками */
+}
+.photo-gallery .item {
+    margin-bottom: 3px;
+}
+.photo-gallery .item img {
+    display: block;
+}
+
+
+@media (min-width: 1200px) {
+    .photo-gallery .gallery {
+        column-count: 5; /* Количество колонок */
+    }
+}

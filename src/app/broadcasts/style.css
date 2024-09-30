@@ -1,0 +1,23 @@
+.broadcasts-page .broadcasts .wrap {
+    margin: 0;
+}
+.broadcasts-page .broadcasts {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .broadcasts-page .broadcasts .wrap .items {
+        width: 45%;
+    }
+    .broadcasts-page .broadcasts .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .broadcasts-page .broadcasts {
+        width: 80%;
+    }
+}

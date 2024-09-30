@@ -9,8 +9,8 @@ const Transfers = () => {
         <li className="transfers">
             <div href="#">Трансферы <Image width={10} src={arrowBottom} alt="Развернуть" title="Развернуть" /></div>
             <ul>
-                <li><Link href="/transfers-news">Новости</Link></li>
-                <li><Link href="/transfers-list">Список</Link></li>
+                <li><Link href="/transfer-news">Новости</Link></li>
+                <li><Link href="/transfer-list">Список</Link></li>
             </ul>
         </li>
     );

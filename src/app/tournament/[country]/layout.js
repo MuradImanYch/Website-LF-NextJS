@@ -1,7 +1,7 @@
 import './style.css';
 
 export const metadata = {
-  title: 'ewf',
+  title: 'sss',
   description: 'w',
   keywords: 'wdw'
 };

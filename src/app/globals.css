@@ -9,7 +9,6 @@
 }
 body {
     background: #EDEFF4;
-    height: 1000vh;
 }
 .container {
     margin: auto;
@@ -45,8 +44,33 @@ li {
     -webkit-border-radius: 10px !important;
     border-radius: 0 !important;
     background: rgba(0, 94, 180, 0.8) !important; 
- }
-
+}
+.tag:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+section > .head {
+    border-left: 5px solid rgba(0, 94, 180, 0.8);
+}
+section .head h2 a, section .head h3 a, .head a {
+    color: rgba(0, 94, 180, 0.9);
+}
+section .head h2, section .head h3 {
+    color: rgba(0, 94, 180, 0.9);
+    font-size: 1em;
+}
+section .head h2 a:hover, section .head h3 a, .head a:hover {
+    text-decoration: underline;
+}
+.newsFeeds, .broadcasts-tv-schedule, .tags-transfers, .uefa-fifa-ranks, .photo-gallery {
+    margin: 50px 0 0 0;
+}
+.no-data {
+    text-align: center;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+}
 
 @media (min-width: 1024px) {
     .container {
@@ -58,6 +82,10 @@ li {
     }
     .head {
         justify-content: flex-start;
+    }
+    .newsFeeds, .broadcasts-tv-schedule, .tags-transfers, .uefa-fifa-ranks {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

@@ -15,7 +15,7 @@ const Nav2 = () => {
                     <li><Link href="/news">Новости</Link></li>
                     <li><Link href="/matches">Матчи</Link></li>
                     <Transfers />
-                    <li className='broadcasts'><Link href="/broadcasts">Трансляции</Link></li>
+                    <li className='broadcasts-nav'><Link href="/broadcasts">Трансляции</Link></li>
                     <Others />
                 </ul>
                 <div className="right-panel">

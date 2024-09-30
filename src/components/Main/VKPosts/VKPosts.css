@@ -1,0 +1,58 @@
+.vkPosts {
+    margin: 50px 0 0 0;
+}
+.vkPosts .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vkPosts .wrap article {
+    margin: 15px 0 30px 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(0, 94, 180, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.vkPosts .wrap article img {
+    height: 150px;
+    object-fit: contain;
+}
+.vkPosts .wrap article h4 {
+    font-weight: normal;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.vkPosts .wrap article h4 a:hover {
+    text-decoration: underline;
+}
+.vkPosts .wrap article .date {
+    font-size: 0.7em;
+    background: rgb(255, 255, 0, 0.8);
+    padding: 1px 6px;
+    margin: 0 0 10px 0;
+}
+
+@media (min-width: 700px) {
+    .vkPosts .wrap article {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .vkPosts {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vkPosts {
+        width: 55%;
+    }
+}

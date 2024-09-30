@@ -5,12 +5,12 @@ import './Slider.css';
 // Динамический импорт компонента SliderClient с отключенным SSR
 const SliderClient = dynamic(() => import('./SliderClient/SliderClient'), { ssr: false });
 
-const Slider = () => {
+const Slider = ({news, leagueId}) => {
     return (
         <div className="slider">
             <div className="swiper-container">
                 <div className="swiper-wrapper">
-                    <SliderContent />
+                    <SliderContent id={leagueId} tournamentNews={news} />
                 </div>
                 <SliderClient />
             </div>

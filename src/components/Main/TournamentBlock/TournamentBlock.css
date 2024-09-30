@@ -1,6 +1,5 @@
 .tournamentBlock {
     margin: 50px 0 0 0;
-    height: 400px;
 }
 .tournamentBlock .name {
     margin: 0 0 0 15px;
@@ -16,6 +15,17 @@
     justify-content: center;
     margin: 20px 0 0 0;
     text-decoration: underline;
+}
+.tournamentBlock .wrap .col > a:hover {
+    color: rgba(0, 94, 180, 1);
+}
+
+
+@media (min-width: 700px) {
+    .tournamentBlock .standings-fixtures {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 

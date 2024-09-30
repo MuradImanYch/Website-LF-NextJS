@@ -1,0 +1,9 @@
+.tv-schedule-page .tv-schedule {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .tv-schedule-page .tv-schedule {
+        width: 80%;
+    }
+}

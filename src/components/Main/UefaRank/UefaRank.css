@@ -1,0 +1,53 @@
+.uefaRank .head, .fifaRank .head {
+    margin: 0 0 10px 0;
+    justify-content: flex-start;
+}
+.uefaRank .head img, .fifaRank .head img {
+    margin: 0 15px 0 0;
+}
+.uefaRank .standings, .fifaRank .standings {
+    font-size: 0.85em;
+    height: auto;
+}
+.uefaRank .standings tbody img, .fifaRank .standings tbody img {
+    margin: 0 10px 0 0;
+}
+.uefaRank .standings .current-points, .uefaRank .standings .clubs, .fifaRank .standings .current-points, .fifaRank .standings .clubs {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+.uefaRank .standings .clubs, .fifaRank .standings .clubs {
+    margin: 0 0 0 20px;
+    font-weight: normal;
+}
+.uefaRank .standings .place, .fifaRank .standings .place {
+    min-width: 15px;
+}
+.uefaRank .standings .points {
+    font-weight: bold;
+}
+.uefaRank .standings, .uefaRank .standings table thead, .uefaRank .standings table tbody, .fifaRank .standings, .fifaRank .standings table thead, .fifaRank .standings table tbody {
+    width: 100% !important;
+}
+.uefaRank thead .clubs {
+    font-weight: bold !important;
+}
+
+@media (min-width: 1024px) {
+    .uefaRank, .fifaRank {
+        width: 45%;
+    }
+    .uefaRank .standings .current-points, .uefaRank .standings .clubs, .fifaRank .standings .current-points, .fifaRank .standings .clubs {
+        width: 10px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .uefaRank .standings .current-points, .uefaRank .standings .clubs, .fifaRank .standings .current-points, .fifaRank .standings .clubs {
+        width: 50px;
+    }
+}

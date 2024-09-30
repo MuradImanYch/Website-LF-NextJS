@@ -1,8 +1,8 @@
-const page = () => {
+import NewsPage from "@/components/News/NewsPage/NewsPage";
+
+const page = async () => {
     return (
-        <div>
-            Блоги
-        </div>
+        <NewsPage placement={'blogs'} />
     );
 };
 

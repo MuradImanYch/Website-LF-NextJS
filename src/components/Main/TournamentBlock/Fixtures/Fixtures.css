@@ -1,27 +1,68 @@
-.fixtures {
-    background: #000;
+.tournamentBlock .fixtures {
     height: 300px;
+    overflow-y: scroll;
+}
+.tournamentBlock .fixtures ul li {
+    margin: 0 0 10px 0;
+    height: 40px;
+}
+.tournamentBlock .fixtures ul li a {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+.tournamentBlock .fixtures ul li a:hover {
+    background: rgba(0, 94, 180, 0.8);
+    transition: 0.2s;
+}
+.tournamentBlock .fixtures ul li a:hover span {
+    color: #fff;
+}
+.tournamentBlock .fixtures ul li a .left span, .tournamentBlock .fixtures ul li a .right span {
+    font-size: 0.8em;
+}
+.tournamentBlock .fixtures ul li a .left, .tournamentBlock .fixtures ul li a .right {
+    width: 100px;
+}
+.tournamentBlock .fixtures ul li a .right {
+    display: flex;
+    justify-content: flex-end;
+}
+.tournamentBlock .fixtures ul li a .left, .tournamentBlock .fixtures ul li a .right {
+    width: 50px;
+    font-size: 0.9em;
 }
 
 
+@media (min-width: 700px) {
+    .tournamentBlock .fixtures {
+        width: 360px;
+        height: 280px;
+    }
+}
+
 @media (min-width: 1024px) {
-    .fixtures {
-        width: 230px;
+    .tournamentBlock .fixtures {
+        width: 250px;
         height: 200px;
+        margin: 0 0 0 10px;
     }
 }
 
 
 @media (min-width: 1200px) {
-    .fixtures {
+    .tournamentBlock .fixtures {
         width: 300px;
         height: 230px;
+        margin: 0 0 0 20px;
     }
 }
 
 
 @media (min-width: 1300px) {
-    .fixtures {
+    .tournamentBlock .fixtures {
         width: 350px;
     }
 }

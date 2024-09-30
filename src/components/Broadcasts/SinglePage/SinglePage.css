@@ -1,0 +1,26 @@
+.broadcast-single-page .single-page h1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    border-bottom: 2px solid #18338a;
+    padding: 0 0 5px 0;
+    margin: 10px 0 30px 0px;
+    line-height: 1.7;
+}
+.broadcast-single-page .single-page h1 img {
+    margin: 0 10px 0 15px;
+}
+.broadcast-single-page .single-page h1 img:not(.broadcast-single-page .single-page h1 img:first-child) {
+    margin: 0 15px 0 10px;
+}
+
+
+@media (min-width: 1024px) {
+    .broadcast-single-page .single-page h1 {
+        line-height: 1;
+    }
+    .broadcast-single-page .single-page {
+        padding: 0 10px;
+    }
+}

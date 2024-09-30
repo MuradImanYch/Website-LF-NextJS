@@ -1,0 +1,9 @@
+.odds-page .odds {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .odds-page .odds {
+        width: 80%;
+    }
+}

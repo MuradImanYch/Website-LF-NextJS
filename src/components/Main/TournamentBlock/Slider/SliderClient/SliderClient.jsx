@@ -6,7 +6,8 @@ import 'swiper/swiper-bundle.css';
 
 const SliderClient = () => {
     useEffect(() => {
-        new Swiper('.swiper-container', {
+        new Swiper('.tournamentBlock .swiper-container', {
+            autoplay: {delay: 5000, disableOnInteraction: true},
             slidesPerView: 1,
             breakpoints: {
                 768: {

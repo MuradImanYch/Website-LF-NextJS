@@ -1,0 +1,48 @@
+.fifaRank .standings {
+    overflow-x: scroll !important;
+}
+.fifa-rank-page .fifaRank {
+    margin: 0;
+}
+.fifa-rank-page .fifaRank, .fifa-rank-page .fifaRank .standings table {
+    width: 100%;
+}
+.fifa-rank-page .fifaRank .standings .place {
+    min-width: 50px;
+}
+.fifa-rank-page .fifaRank .standings thead {
+    background: rgba(0, 94, 180, 0.8);
+}
+.fifa-rank-page .fifaRank .standings thead * {
+    color: #fff;
+}
+.fifa-rank-page .fifaRank .standings thead tr {
+    border: 0;
+}
+.fifa-rank-page .fifaRank .standings .team {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+}
+.fifa-rank-page .fifaRank .standings .previous-points, .fifa-rank-page .fifaRank .standings .pointsDiff {
+    min-width: 100px;
+    text-align: center;
+}
+.fifa-rank-page .fifaRank .standings .pointsDiff {
+    font-weight: normal;
+}
+.fifa-rank-page .fifaRank .standings .place, .fifa-rank-page .fifaRank .standings .points {
+    text-align: center;
+}
+.fifa-rank-page .fifaRank .standings tr {
+   height: 40px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid silver;
+}
+
+@media (min-width: 1200px) {
+    .fifa-rank-page .fifaRank {
+        width: 80%;
+    }
+}

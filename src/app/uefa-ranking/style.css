@@ -1,0 +1,42 @@
+.uefaRank .standings {
+    overflow-x: scroll !important;
+}
+.uefa-rank-page .uefaRank, .uefa-rank-page .uefaRank .standings table {
+    width: 100%;
+}
+.uefa-rank-page .uefaRank .standings .place {
+    min-width: 50px;
+}
+.uefa-rank-page .uefaRank .standings thead {
+    background: rgba(0, 94, 180, 0.8);
+}
+.uefa-rank-page .uefaRank .standings thead * {
+    color: #fff;
+}
+.uefa-rank-page .uefaRank .standings thead tr {
+    border: 0;
+}
+.uefa-rank-page .uefaRank .standings .team {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+}
+.uefa-rank-page .uefaRank .standings .previous-points {
+    min-width: 100px;
+    text-align: center;
+}
+.uefa-rank-page .uefaRank .standings .place, .uefa-rank-page .uefaRank .standings .points {
+    text-align: center;
+}
+.uefa-rank-page .uefaRank .standings tr {
+   height: 40px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid silver;
+}
+
+@media (min-width: 1200px) {
+    .uefa-rank-page .uefaRank {
+        width: 80%;
+    }
+}

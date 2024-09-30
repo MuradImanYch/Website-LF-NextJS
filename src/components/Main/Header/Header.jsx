@@ -4,11 +4,11 @@ import LiveBoard from './LiveBoard/LiveBoard';
 import Slider from './Slider/Slider';
 
 
-const Header = () => {
+const Header = ({news}) => {
     return (
         <>
-            <Slider />
-            <Collage />
+            <Slider mobileNews={news} />
+            <Collage news={news} />
             <LiveBoard />
         </>
     );

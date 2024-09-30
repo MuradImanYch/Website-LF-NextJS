@@ -1,0 +1,12 @@
+.tags-page .tags {
+    width: 100%;
+}
+.tags-page .tags .wrap .tag {
+    margin: 0 10px 13px 0;
+ }
+
+@media (min-width: 1200px) {
+    .tags-page .tags {
+        width: 80%;
+    }
+}

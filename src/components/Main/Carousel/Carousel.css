@@ -1,0 +1,51 @@
+.carousel {
+    margin: 50px 0 0 0;
+}
+.carousel .slider div {
+    height: 100%;
+}
+.carousel .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.carousel .slider > div:hover img {
+    opacity: 1 !important;
+    transition: 0.3s;
+}
+.carousel .slider h3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    font-size: 0.85em !important;
+    width: 100%;
+    font-size: 1.2em;
+}
+.carousel .slider .tag {
+    position: absolute;
+    left: 118px;
+    top: 2.8%;
+    background: rgb(255, 255, 0, 0.8);
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 0 3px 3px 0;
+}
+.carousel .slider .date {
+    position: absolute;
+    top: 2.8%;
+    left: 10px;
+    font-size: 0.7em;
+    background: rgb(255, 255, 0, 0.8);
+    padding: 1px 6px;
+}
+.carousel .preview-title {
+    display: block;
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+}
+.carousel .slider .preview-title {
+    color: #fff;
+}

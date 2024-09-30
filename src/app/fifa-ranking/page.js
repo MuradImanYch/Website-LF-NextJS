@@ -1,7 +1,10 @@
+import FifaRank from "@/components/Main/FifaRank/FifaRank";
+import "./style.css";
+
 const page = () => {
     return (
-        <div>
-            Рейтинг ФИФА
+        <div className="fifa-rank-page">
+            <FifaRank placement={'page'} />
         </div>
     );
 };

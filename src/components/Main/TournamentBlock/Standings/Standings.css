@@ -1,37 +1,37 @@
-.standings {
+ .standings {
     display: flex;
     justify-content: center;
 }
-.standings table {
+ .standings table {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.standings table thead {
+ .standings table thead {
     background: rgba(0, 94, 180, 0.8);
 }
-.standings table thead tr th {
+ .standings table thead tr th {
     color: #fff;
 }
-.standings table thead, .standings table tbody {
+ .standings table thead,  .standings table tbody {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
 }
-.standings table thead tr, .standings table tbody tr {
+ .standings table thead tr,  .standings table tbody tr {
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-height: 40px;
     align-items: center;
+    padding: 0 20px 0 10px;
 }
-.standings table tbody tr {
-    border-bottom: 2px solid silver;
+ .standings table tbody tr {
+    border-bottom: 1px solid silver;
 }
-.standings table .place {
+ .standings table .place {
     width: 20px;
     display: flex;
     justify-content: center;
@@ -39,39 +39,39 @@
     height: 25px;
     width: 25px;
 }
-.standings table .team {
+ .standings table .team {
     width: 200px;
     display: flex;
 }
-.standings table .points {
+ .standings table .points {
     width: 30px;
     display: flex;
     justify-content: center;
 }
 
 @media (min-width: 410px) {
-    .standings table thead, .standings table tbody {
+     .standings table thead,  .standings table tbody {
         width: 320px;
     }
 }
 
 
 @media (min-width: 1024px) {
-    .standings {
+     .standings {
         height: 200px;
         width: 300px;
     }
-    .standings table tbody {
+     .standings table tbody {
         overflow-y: scroll;
     }
-    .standings table thead, .standings table tbody {
+     .standings table thead,  .standings table tbody {
         width: 100%;
     }
 }
 
 
 @media (min-width: 1200px) {
-    .standings {
+     .standings {
         width: 320px;
         height: 230px;
     }
@@ -79,7 +79,7 @@
 
 
 @media (min-width: 1300px) {
-    .standings {
+     .standings {
         width: 350px;
         height: 230px;
     }

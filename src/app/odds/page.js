@@ -1,7 +1,10 @@
+import Odds from "@/components/Main/Odds/Odds";
+import './style.css';
+
 const page = () => {
     return (
-        <div>
-            Котировки
+        <div className="odds-page">
+            <Odds placement={'page'} />
         </div>
     );
 };

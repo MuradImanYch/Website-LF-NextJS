@@ -1,0 +1,44 @@
+.tv-schedule {
+    margin: 50px 0 0 0;
+}
+.tv-schedule .wrap {
+    margin: 10px 0 0 0;
+}
+.tv-schedule .wrap .items {
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+}
+.tv-schedule .wrap .items span {
+    margin: 0 10px;
+    font-size: 0.8em;
+}
+.tv-schedule .wrap .items span:last-child {
+    width: 100%;
+}
+.tv-schedule .live-dot {
+    min-width: 5px;
+    min-height: 5px;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 0px 6px 1px red;
+    margin-right: 20px !important;
+}
+
+
+@media (min-width: 1024px) {
+    .tv-schedule {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .tv-schedule {
+        width: 55%;
+    }
+    .tv-schedule .wrap .items {
+        margin: 0 0 40px 0;
+    }
+}

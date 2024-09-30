@@ -1,0 +1,63 @@
+.broadcasts .wrap {
+    margin: 10px 0 0 0;
+}
+.broadcasts .wrap .items {
+    width: 100%;
+}
+.broadcasts .wrap .items:hover {
+    background: rgba(0, 94, 180, 0.8);
+    transition: 0.2s;
+}
+.broadcasts .wrap .items:hover a span {
+    color: #fff;
+}
+.broadcasts .wrap .items a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    padding: 15px 0;
+}
+.broadcasts .wrap .items .center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+}
+.broadcasts .wrap .items .center span {
+    font-size: 0.8em;
+    margin: 2px 0;
+    width: 120px;
+    text-align: center;
+}
+.broadcasts .wrap .items .left span, .broadcasts .wrap .items .right span {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 5px;
+}
+.broadcasts .wrap .items .left, .broadcasts .wrap .items .right {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.broadcasts .wrap .items .left {
+    justify-content: flex-start;
+}
+.broadcasts .wrap .items .right {
+    justify-content: flex-end;
+}
+.broadcasts .wrap .items .left img, .broadcasts .wrap .items .right img {
+    margin: 0 10px;
+}
+.broadcasts .wrap .items .live {
+    color: red;
+}
+
+
+@media (min-width: 1024px) {
+    .broadcasts {
+        width: 40%;
+    }
+}

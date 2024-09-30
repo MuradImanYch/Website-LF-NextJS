@@ -1,0 +1,27 @@
+.fifaRank {
+    margin: 50px 0 0 0;
+}
+.fifaRank .difference, .fifaRank .association {
+    min-width: 50px;
+    text-align: center;
+}
+.fifaRank .team {
+    align-items: center;
+}
+.fifaRank thead .association {
+    font-weight: bold !important;
+}
+
+
+@media (min-width: 380px) {
+    .fifaRank .difference {
+        margin: 0 15px 0 0;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .fifaRank {
+        margin: 0;
+    }
+}

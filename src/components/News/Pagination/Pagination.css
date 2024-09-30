@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 30px 0;
+}
+.pagination a {
+    margin: 0 10px;
+    border: 1px solid rgba(0, 94, 180, 0.8);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.pagination a.current {
+    font-weight: bold;
+    background: rgba(0, 94, 180, 0.8);
+    color: #fff;
+}

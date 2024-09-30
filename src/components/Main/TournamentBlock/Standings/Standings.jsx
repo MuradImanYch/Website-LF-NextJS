@@ -2,13 +2,13 @@ import './Standings.css';
 
 const Standings = () => {
     return (
-        <div className='standings'>
+        <article className='standings'>
             <table>
                 <thead>
                     <tr>
                         <th className="place">#</th>
                         <th className="team">Команда</th>
-                        <th className='points'>О</th>
+                        <th className='points'>Очки</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,7 +44,7 @@ const Standings = () => {
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </article>
     );
 };
 

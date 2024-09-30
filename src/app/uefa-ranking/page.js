@@ -1,7 +1,10 @@
+import UefaRank from "@/components/Main/UefaRank/UefaRank";
+import "./style.css";
+
 const page = () => {
     return (
-        <div>
-            Рейтинг УЕФА
+        <div className="uefa-rank-page">
+            <UefaRank placement={'page'} />
         </div>
     );
 };

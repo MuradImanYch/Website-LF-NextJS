@@ -1,0 +1,113 @@
+.allNews .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.allNews .newsWrap {
+    margin: 0 0 50px 0;
+}
+.allNews .newsWrap article {
+    margin: 0 0 30px 0;
+}
+.allNews .actual-news .actual-news-wrap {
+    margin: 0 0 50px 0;
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+    height: 250px;
+    overflow-y: scroll;
+}
+.allNews .actual-news article {
+    margin: 12px 0;
+}
+.allNews .actual-news .head {
+    border-left: 5px solid rgba(0, 94, 180, 0.8);
+}
+.allNews .actual-news article h4 .date {
+    font-size: 0.75em;
+    margin: 0 8px 0 0;
+    background: rgb(255, 255, 0, 0.8);
+    padding: 1px 6px;
+}
+.allNews .actual-news article h4 a:hover {
+    text-decoration: underline;
+}
+.allNews .actual-news .head h3 {
+    font-size: 1em;
+}
+.allNews .actual-news .head h3 a:hover {
+    text-decoration: underline;
+}
+.allNews .actual-news .head h3 a {
+    color: rgba(0, 94, 180, 0.9);
+}
+.allNews .actual-news h4 {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+.allNews article > a {
+    display: flex;
+}
+.allNews article .text * {
+    font-weight: normal;
+    font-size: 0.865em;
+}
+.allNews article .text .date, .allNews article .text .tag {
+    font-size: 0.7em !important;
+    background: rgb(255, 255, 0, 0.8);
+    padding: 1px 6px;
+    align-self: baseline;
+    margin: 0 5px 0 0;
+}
+.allNews article .text {
+    display: flex;
+    flex-direction: column;
+}
+.allNews article .image {
+    margin: 0 10px 0 0;
+}
+.allNews article .text h2 {
+    margin: 5px 0 0 0;
+}
+.allNews article .text .description {
+    display: none;
+}
+.allNews article .text h2:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    .allNews article .text * {
+        font-size: 1em;
+    }
+    .allNews article .text .date, .allNews article .text .tag {
+        font-size: 0.8em !important;
+    }
+    .allNews article .image {
+        margin: 0 15px 0 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .allNews .wrap {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .allNews .wrap .newsWrap {
+        width: 70%;
+    }
+    .allNews .wrap .actual-news {
+        width: 26%;
+    }
+    .allNews article .text .description {
+        display: block;
+        font-size: 0.8em;
+        margin: 5px 0 0 0;
+    }
+    .allNews article .text h2 a {
+        font-weight: bold;
+    }
+    .allNews .actual-news .actual-news-wrap {
+        height: auto;
+        border-bottom: 0;
+    }
+}
