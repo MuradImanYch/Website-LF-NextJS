@@ -10,18 +10,24 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
     "cyrillic-to-translit-js": "^3.2.1",
+    "date-fns": "^4.1.0",
     "dotenv": "^16.4.5",
+    "ffmpeg-static": "^5.2.0",
     "html-react-parser": "^5.1.16",
     "mysql2": "^3.10.2",
     "next": "^14.2.4",
     "next-video": "^1.2.0",
+    "node-cron": "^3.0.3",
+    "openai": "^4.72.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
     "react-slick": "^0.30.2",
     "sharp": "^0.33.4",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.4"
+    "swiper": "^11.1.14"
   }
 }

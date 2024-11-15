@@ -1,0 +1,33 @@
+.league-fixtures > .head {
+    margin-bottom: 30px;
+}
+.league-fixtures {
+    margin: 0 !important;
+}
+.league-fixtures .fixtures ul li {
+    height: 60px !important;
+}
+.league-fixtures .fixtures ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid silver;
+}
+.league-fixtures .fixtures {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (min-width: 1024px) {
+    .league-fixtures .fixtures ul li a .center span {
+        /* font-size: 0.8em !important; */
+    }
+    .league-fixtures .fixtures ul li a .left, .tournamentBlock .fixtures ul li a .right {
+        /* font-size: 0.8em !important; */
+        /* width: 100px !important; */
+    }
+}
+
+@media (min-width: 1200px) {
+    .league-fixtures .fixtures {
+        width: 80% !important;
+    }
+}

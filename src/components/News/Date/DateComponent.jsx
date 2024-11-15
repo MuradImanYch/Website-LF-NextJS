@@ -23,7 +23,7 @@ const DateComponent = ({ dateProps, placement }) => {
     return (
         <>
             {/* {day}-{month}-{year} | {hours}:{minutes} */}
-            {placement === 'broadcasts' ? `${hours + ':' + minutes}` : `${day + '-' + month + '-' + year + ' | ' + hours + ':' + minutes}`}
+            {placement === 'broadcasts' ? `${hours + ':' + minutes}` : placement === 'api-client-date' ? `${year}-${month}-${day}` : `${day + '-' + month + '-' + year + ' | ' + hours + ':' + minutes}`}
         </>
     );
 };

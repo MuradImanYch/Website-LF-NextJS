@@ -1,0 +1,17 @@
+main > div > div.mainFixtures {
+    margin: 380px 0 -20px 0;
+}
+
+
+@media (min-width: 1024px) {
+    main > div > div.mainFixtures {
+        margin: 330px 0 -20px 0;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    main > div > div.mainFixtures {
+        margin: 430px 0 -23px 0;
+    }
+}

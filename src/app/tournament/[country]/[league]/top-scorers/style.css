@@ -1,0 +1,24 @@
+.league-top-scores > .head {
+    margin-bottom: 30px;
+}
+.league-top-scores {
+    margin: 0 !important;
+}
+.league-top-scores .top-scores {
+    overflow-x: scroll;
+}
+
+/* @media (min-width: 1200px) {
+    .league-top-scores .top-scores table thead, .league-top-scores .top-scores table tbody {
+        min-width: 80% !important;
+    }
+    .league-top-scores .top-scores {
+        width: 80%;
+    }
+} */
+
+@media (max-width: 600px) {
+    .league-top-scores .top-scores {
+        overflow-x: scroll;
+    }
+}

@@ -10,7 +10,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         
         gap: 5px;
-        height: 450px;
+        height: 0;
     }
     .collage > article {
         position: relative;
@@ -121,7 +121,7 @@
 
 @media (min-width: 1200px) {
     .collage {
-        height: 600px;
+        height: 0;
     }
     #item-1, #item-2, #item-3, #item-4 {
         width: 270px;  

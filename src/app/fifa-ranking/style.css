@@ -19,6 +19,13 @@
 .fifa-rank-page .fifaRank .standings thead tr {
     border: 0;
 }
+.fifa-rank-page .fifaRank .standings thead th {
+    background: rgba(0, 94, 180, 0.8);
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .fifa-rank-page .fifaRank .standings .team {
     min-width: 200px;
     display: flex;

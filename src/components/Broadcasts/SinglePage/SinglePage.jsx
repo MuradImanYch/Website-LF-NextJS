@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import './SinglePage.css';
 import Client from '../Client/Client';
+import { notFound } from 'next/navigation';
+// import cyrillicToTranslit from 'cyrillic-to-translit-js';
+import translate from '@/libs/translate';
+import config from '../../../../public/conf.json';
 
-const SinglePage = async ({id}) => {
+const SinglePage = async ({url, lang}) => {
     async function fetchBroadcast() {
         try {
-          const res = await fetch(`http://78.46.254.73:3000/api/broadcasts?id=${id}`, {cache: 'no-cache'});
+          const res = await fetch(`${config.domain}/api/broadcasts?url=${url}`, {cache: 'no-cache'});
           return await res.json();
         } catch (err) {
           console.error(err);
@@ -15,11 +19,16 @@ const SinglePage = async ({id}) => {
     
     const broadcast = await fetchBroadcast();
 
+    if(broadcast.length < 1 || url !== broadcast[0].url) {
+      notFound();
+    }
+
     return (
         <div className="single-page">
-            <h1>Трансляция матча: <Image title={broadcast[0].hName} alt={`${broadcast[0].hName} лого`} placeholder="empty" src={broadcast[0].hLogo} width={25} height={25} /> {broadcast[0].hName} - {broadcast[0].aName} <Image title={broadcast[0].aName} alt={`${broadcast[0].aName} лого`} placeholder="empty" src={broadcast[0].aLogo} width={25} height={25} /> | {broadcast[0].lName} <span>{broadcast[0].broadcastLink === null || broadcast[0].broadcastLink === '' ? <span style={{ color: 'silver', letterSpacing: '1.3px', margin: '0 0 0 20px' }}>[Трансляция пока не началась]</span> : <span style={{ color: 'red', letterSpacing: '1.3px', margin: '0 0 0 20px' }}>[LIVE]</span>}</span></h1>
+            <h1>{broadcast[0].status !== 'finished' ? lang === 'en' ? 'Live stream' : 'Трансляция матча' : lang === 'en' ? 'Match replay' : 'Повтор матча'}: <Image title={lang === 'en' ? broadcast[0].hName : config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].hName, {from: 'en', to: 'ru'})} alt={`${lang === 'en' ? broadcast[0].hName : config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].hName, {from: 'en', to: 'ru'})} лого`} placeholder="empty" src={broadcast[0].hLogo} width={25} height={25} /> {lang === 'en' ? broadcast[0].hName : config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].hName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].hName, {from: 'en', to: 'ru'})} - {lang === 'en' ? broadcast[0].aName : config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].aName, {from: 'en', to: 'ru'})} <Image title={lang === 'en' ? broadcast[0].aName : config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].aName, {from: 'en', to: 'ru'})} alt={`${lang === 'en' ? broadcast[0].aName : config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].aName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].aName, {from: 'en', to: 'ru'})} лого`} placeholder="empty" src={broadcast[0].aLogo} width={25} height={25} /> | {lang === 'en' ? broadcast[0].lName : config['correct-translate-ru'][await translate(broadcast[0].lName, {from: 'en', to: 'ru'})] ? config['correct-translate-ru'][await translate(broadcast[0].lName, {from: 'en', to: 'ru'})] : await translate(broadcast[0].lName, {from: 'en', to: 'ru'})}</h1>
+            <span className='status-text'>{broadcast[0].status === 'live' ? <span style={{ color: 'red', letterSpacing: '1.3px'}}>[{lang === 'en' ? 'Live' : 'Прямой эфир'}]</span> : null || broadcast[0].status === 'scheduled' ? <span style={{ color: 'gray', letterSpacing: '1.3px'}}>[{lang === 'en' ? `The broadcast hasn't started yet` : 'Трансляция пока не началась'}]</span> : null || broadcast[0].status === 'finished' ? <span style={{ color: '#000', letterSpacing: '1.3px'}}>[{lang === 'en' ? 'Finished' : 'Завершён'}]</span> : null}</span>
 
-            <Client broadcast={broadcast} />
+            <Client lang={lang} broadcast={broadcast} />
         </div>
     );
 };

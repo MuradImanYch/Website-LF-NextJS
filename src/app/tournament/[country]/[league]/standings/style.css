@@ -1,0 +1,60 @@
+.league-standings > .head {
+    margin-bottom: 30px;
+}
+.league-standings {
+    margin: 0 !important;
+}
+.league-standings .standings table thead, .league-standings .standings table tbody {
+    min-width: 100% !important;
+}
+.league-standings .standings {
+    width: 100%;
+    height: auto;
+}
+.league-standings .standings table {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.league-standings article {
+    display: flex;
+    flex-direction: column;
+}
+.league-standings .standings caption {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.league-standings .standings table:not(.league-standings .standings table:nth-child(1)) {
+    margin: 40px 0 0 0 !important;
+}
+
+
+@media (min-width: 1200px) {
+    .league-standings .standings table thead, .league-standings .standings table tbody {
+        min-width: 80% !important;
+    }
+    .league-standings .standings {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .league-standings table {
+        overflow-x: scroll;
+    }
+    .league-standings .standings .place {
+        margin: 0 10px 0 0;
+        min-width: 25px;
+        min-height: 25px;
+    }
+    .league-standings .standings .team {
+        min-width: 150px;
+    }
+    .league-standings .standings table .games, .league-standings .standings table .win, .league-standings .standings table .draw, .league-standings .standings table .lose, .league-standings .standings table .form, .league-standings .standings table .points, .league-standings .standings table .goals-for, .league-standings .standings table .goals-against {
+        min-width: 100px;
+    }
+    .league-standings .standings table thead .games, .league-standings .standings table thead .win, .league-standings .standings  thead .draw, .league-standings .standings table thead .lose, .league-standings .standings table thead .form, .league-standings .standings table thead .points, .league-standings .standings table thead .goals-for, .league-standings .standings table thead .goals-against {
+        background: rgba(0, 94, 180, 0.8);
+        height: 100%;
+        align-items: center;
+    }
+}

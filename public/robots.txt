@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow: /
+Allow: /
+
+# Host
+Host: https://legfootball.com
+
+# Sitemaps
+Sitemap: https://legfootball.com/sitemap.xml

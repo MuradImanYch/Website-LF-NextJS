@@ -3,6 +3,34 @@ import Link from 'next/link';
 import config from '../../../../../public/conf.json';
 import NewsPage from '@/components/News/NewsPage/NewsPage';
 import './style.css';
+import '../style.css';
+import { notFound } from 'next/navigation';
+
+export const generateMetadata = ({ params }) => {
+    const country = config.tournaments.filter(e => {
+        return e.name.en.toLowerCase().replaceAll(/\s+/g, '').replaceAll(/-/g, '') === params.country.replaceAll(/-/g, '');
+    });
+
+    if(country.length < 1) {
+        notFound();
+    }
+
+    return {
+        title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события`,
+        description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола.`,
+        keywords: `новости футбола ${country[0]?.name.ru}, события турнира ${country[0]?.name.ru}, аналитика матчей ${country[0]?.name.ru}`,
+        openGraph: {
+          type: 'website',
+          title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события`,
+          description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола.`
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события`,
+          description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола.`
+        }
+    };
+};
 
 const page = ({params}) => {
     const country = config.tournaments.filter(e => {
@@ -17,7 +45,7 @@ const page = ({params}) => {
         }
     });
 
-    const pagPathName = '/' + country[0].name.en.replace(/\s+/g, '-').toLowerCase();
+    const pagPathName = '/' + country[0].name.en.replace(/\s+/g, '-').toLowerCase() + '/';
 
     return (
         <div className='country-news tournament-country'>

@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 import arrowBottom from '../../../../../public/assets/ico/arrow-bottom.webp';
 
-const Transfers = () => {
+const Transfers = ({pathname}) => {
     return (
         <li className="transfers">
-            <div href="#">Трансферы <Image width={10} src={arrowBottom} alt="Развернуть" title="Развернуть" /></div>
+            <div href="#">{pathname.startsWith('/en') ? 'Transfers' : 'Трансферы'} <Image width={10} src={arrowBottom} alt={"Развернуть"} title={"Развернуть"} /></div>
             <ul>
-                <li><Link href="/transfer-news">Новости</Link></li>
-                <li><Link href="/transfer-list">Список</Link></li>
+                <li><Link href={pathname.startsWith('/en') ? '/en/transfer-news' : '/transfer-news'}>{pathname.startsWith('/en') ? 'News' : 'Новости'}</Link></li>
+                <li><Link href={pathname.startsWith('/en') ? '/en/transfer-list' : '/transfer-list'}>{pathname.startsWith('/en') ? 'List' : 'Список'}</Link></li>
             </ul>
         </li>
     );

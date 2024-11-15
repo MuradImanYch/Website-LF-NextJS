@@ -1,15 +1,15 @@
+import Fixtures from './Fixtures/Fixtures';
 import Collage from './Collage/Collage';
 import './Header.css';
-import LiveBoard from './LiveBoard/LiveBoard';
 import Slider from './Slider/Slider';
 
 
-const Header = ({news}) => {
+const Header = ({news, lang, fixtures}) => {
     return (
         <>
-            <Slider mobileNews={news} />
-            <Collage news={news} />
-            <LiveBoard />
+            <Slider lang={lang} mobileNews={news} />
+            <Collage news={news} lang={lang} />
+            <Fixtures lang={lang} fixtures={fixtures} />
         </>
     );
 };

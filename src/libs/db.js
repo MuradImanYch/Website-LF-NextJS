@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-require('dotenv').config();
+require('dotenv').config({ path: '/var/www/html/lf-nextjs/.env' });
 
 const pool = mysql.createPool({
   host: process.env.HOST,

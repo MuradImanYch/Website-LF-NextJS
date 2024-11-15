@@ -1,0 +1,49 @@
+.top-scores table thead {
+    background: rgba(0, 94, 180, 0.8);
+}
+.top-scores table thead tr th {
+    color: #fff;
+}
+.top-scores table {
+    border-collapse: collapse;
+}
+.top-scores table tbody tr {
+    border-bottom: 1px solid silver;
+}
+.top-scores table tbody tr .player, .top-scores table tbody tr .team, .top-scores table tbody tr .position, .top-scores table tbody tr .games, .top-scores table tbody tr .goals, .top-scores table tbody tr .penalty, .top-scores table tbody tr .assists, .top-scores table tbody tr .cards {
+    font-size: 0.8em;
+}
+.top-scores table thead th, .top-scores table tbody td {
+    height: 40px;
+}
+.top-scores table tr .place, .top-scores table tr .goals, .top-scores table tr .penalty, .top-scores table tr .assists {
+    min-width: 50px;
+    text-align: center;
+}
+.top-scores table tr .player, .top-scores table tr .team, .top-scores table tr .games, .top-scores table tr .cards {
+    min-width: 150px;
+    text-align: center;
+}
+.top-scores table tbody tr .player {
+    align-items: center;
+    display: flex;
+}
+.top-scores table tbody tr .player img, .top-scores table tbody tr .team img {
+    margin: 0 5px 0 0;
+}
+.top-scores table tr .team div {
+    display: flex;
+    align-items: center;
+}
+.top-scores table tbody tr .team img {
+    height: 20px;
+    width: auto;
+    max-width: 20px;
+}
+.top-scores table tr .player, .top-scores table tr .team {
+    text-align: left;
+}
+.top-scores table tr .position {
+    min-width: 70px;
+    text-align: center;
+}

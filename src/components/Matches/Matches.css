@@ -1,0 +1,128 @@
+.matches .tournament-matches .tournaments {
+    margin: 0 0 20px 0;
+}
+.matches .tournament-matches .tournaments .head {
+    margin: 0;
+    font-size: 0.8em;
+    justify-content: flex-start;
+}
+.matches .tournament-matches .tournaments .head img:nth-child(2) {
+    margin: 0 20px 0 15px;
+}
+.matches .tournament-matches .tournaments .items {
+    overflow-x: scroll;
+}
+.matches .tournament-matches .tournaments .items .item {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid silver;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.matches .tournament-matches .tournaments .items .item .center {
+    align-items: center;
+    display: flex;
+}
+.matches .tournament-matches .tournaments .items .item .status, .matches .tournament-matches .tournaments .items .item .dateTime {
+    max-width: 50px;
+    font-size: 0.7em !important;
+}
+.matches .tournament-matches .tournaments .items .item .dateTime {
+    text-align: right;
+}
+.matches .tournament-matches .tournaments .items .item .center img {
+    margin: 0 8px;
+    height: 20px;
+    width: auto;
+    max-width: 20px;
+}
+.matches .tournament-matches .tournaments .items .item .center span:nth-child(3) {
+    font-size: 0.65em !important;
+    display: flex;
+    width: 40px;
+    justify-content: center;
+}
+.matches .tournament-matches .tournaments .items .item .center span:nth-child(1), .matches .tournament-matches .tournaments .items .item .center span:last-child {
+    display: inline-block;
+    width: 50px;
+    font-size: 0.6em !important;
+}
+.matches .tournament-matches .tournaments .items .item .center span:nth-child(1) {
+    text-align: right;
+}
+.matches .tournament-matches .tournaments a:last-child .item {
+    border: 0;
+}
+.matches .tournament-matches .tournaments .items .item:hover {
+    background: rgba(0, 94, 180, 0.8);
+    transition: 0.2s;
+}
+.matches .tournament-matches .tournaments .items .item:hover * {
+    color: #fff;
+}
+.matches .tournament-matches .tournaments .items .item .center .team {
+    font-size: 0.6em !important;
+}
+.matches .tournament-matches .tournaments .items .item .center .rc {
+    background: rgb(233, 16, 16);
+    color: #fff;
+    margin: 0 10px;
+    min-height: 16px;
+    min-width: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    border-radius: 3px;
+}
+.matches .tournament-matches .tournaments h2 {
+    font-size: 0.8em !important;
+}
+
+@media (min-width: 380px) {
+    .matches .tournament-matches .tournaments .items .item .center span:nth-child(3) {
+        font-size: 0.8em !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .matches .tournament-matches .tournaments .head {
+        font-size: 1em;
+    }
+    .matches .tournament-matches .tournaments .items .item .center span:nth-child(1), .matches .tournament-matches .tournaments .items .item .center span:last-child {
+        font-size: 0.8em !important;
+        width: 100px;
+    }
+    .matches .tournament-matches .tournaments .items .item .status, .matches .tournament-matches .tournaments .items .item .dateTime {
+        min-width: 150px;
+        font-size: 0.85em !important;
+    }
+    .matches .tournament-matches .tournaments .items .item {
+        justify-content: flex-start;
+    }
+    .matches .tournament-matches .tournaments .items .item > div {
+        margin: 0 20px 0 0;
+    }
+    .matches .tournament-matches .tournaments .items .item .center span:nth-child(3) {
+        font-size: 0.9em !important;
+    }
+    .matches .tournament-matches .tournaments .items .item .center .team {
+        font-size: 0.8em !important;
+    }
+    .matches .tournament-matches .tournaments .items .item .center .rc {
+        margin: 0 15px;
+        min-height: 19px;
+        min-width: 15px;
+        font-size: 0.7em;
+    }
+    .matches .tournament-matches .tournaments h2 {
+        font-size: 1em !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .matches .tournament-matches {
+        width: 80%;
+    }
+}

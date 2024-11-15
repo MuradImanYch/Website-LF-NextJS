@@ -1,0 +1,51 @@
+.matches .head {
+    margin: 0 0 30px 0;
+}
+.matches .head ul {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2;
+}
+.matches .head ul li {
+    margin: 0 5px 0 0;
+}
+.matches .head ul li a {
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+.matches.all ul li:nth-child(1) a {
+    font-weight: bold;
+    background: #f02d54;
+    color: #fff;
+}
+.matches.live ul li:nth-child(2) a {
+    font-weight: bold;
+    background: #f02d54;
+    color: #fff;
+}
+.matches.results ul li:nth-child(3) a {
+    font-weight: bold;
+    background: #f02d54;
+    color: #fff;
+}
+.matches.fixtures ul li:nth-child(4) a {
+    font-weight: bold;
+    background: #f02d54;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    .matches .head ul li a {
+        font-size: 1em;
+    }
+    .matches .head ul li {
+        margin: 0 15px 0 0;
+    }
+    .matches .head ul li a {
+        padding: 5px 10px;
+    }
+    .matches .head {
+        justify-content: space-between;
+    }
+}

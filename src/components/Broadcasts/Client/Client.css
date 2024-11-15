@@ -19,7 +19,41 @@
     top: -7px;
     right: 0px;
 }
+.broadcast-single-page .countdown {
+    display: flex;
+    justify-content: space-between;
+}
+.broadcast-single-page .countdown .time > div {
+    font-size: 1.5em;
+    border: 2px solid rgba(0, 94, 180, 0.97);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.broadcast-single-page .countdown .time > p {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.broadcast-single-page .countdown-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
 
+
+@media (min-width: 700px) {
+    .broadcast-single-page .countdown .time > div {
+        font-size: 3em;
+        width: 100px;
+        height: 100px;
+    }
+    .broadcast-single-page .countdown .time > p {
+        font-size: 1.3em;
+    }
+}
 
 @media (min-width: 1024px) {
     .broadcast-single-page .single-page .video {

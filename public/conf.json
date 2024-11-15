@@ -1,8 +1,21 @@
 {
-  "actualLeagueIds": [2, 3, 848, 39, 140, 71, 78, 61, 235, 203, 333, 389, 419, 5, 4, 1],
-  "CISTournaments": ["Армения", "Азербайджан", "Беларусь", "Эстония", "Грузия", "Казахстан", "Киргизия", "Латвия", "Литва", "Молдова", "Россия", "Таджикистан", "Туркменистан", "Украина", "Узбекистан"],
+  "actualLeagueIds": [2, 3, 848, 39, 140, 135, 78, 61, 235, 203, 333, 369, 389, 419, 32, 30, 29, 31, 9, 7, 35, 34, 33, 960, 5, 4, 1, 327, 342],
+  "CISTournaments": ["Армения", "Азербайджан", "Беларусь", "Эстония", "Грузия", "Казахстан", "Кыргызстан", "Латвия", "Литва", "Молдова", "Россия", "Таджикистан", "Туркменистан", "Украина", "Узбекистан"],
   "topTournaments": ["Англия", "Испания", "Италия", "Германия", "Франция", "Португалия", "Нидерланды", "Турция"],
-  "otherTournaments": ["Европейские турниры", "Международные", "Азиатские турниры", "Сев и Центр Американские турниры", "Южноамериканские турниры"],
+  "otherTournaments": ["Европа", "Международные", "Азия", "Северная и Центральная Америка", "Южная Америка", "Африка", "Океания"],
+  "correct-translate-en": {
+    "nuclear submarine": "EPL",
+    "WORLD RPL": "MIR RPL"
+  },
+  "correct-translate-ru": {
+    "Генуя": "Дженоа",
+    "Стад Брестуа 29": "Брест",
+    "Клуб Брюгге КВ": "Брюгге",
+    "Бавария Мюнхен": "Бавария",
+    "Сабайль": "Сабаил",
+    "Злоумышленник": "Нападающий"
+  },
+  "domain": "https://legfootball.com",
   "tournaments": [
     {
       "name": {
@@ -241,13 +254,13 @@
           "category": ["Австрия", "сборная Австрии", "Австрии", "Австрийский", "Австрийские"]
         },
         {
-          "id": 220,
+          "id": 218,
           "name": {
-            "en": "Cup",
-            "ru": "Кубок"
+            "en": "Bundesliga",
+            "ru": "Бундеслига"
           },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/220.png"
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
         },
         {
           "id": 219,
@@ -259,13 +272,13 @@
           "logo": "https://media.api-sports.io/football/leagues/219.png"
         },
         {
-          "id": 218,
+          "id": 220,
           "name": {
-            "en": "Bundesliga",
-            "ru": "Бундеслига"
+            "en": "Cup",
+            "ru": "Кубок"
           },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/220.png"
         },
         {
           "id": 222,
@@ -526,20 +539,11 @@
         {
           "id": 978,
           "name": {
-            "en": "U19 Superliga",
-            "ru": "Суперлига U19"
+            "en": "2nd Division - Play-offs",
+            "ru": "2й дивизион - Плей-офф"
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/978.png"
-        },
-        {
-          "id": 979,
-          "name": {
-            "en": "U19 League",
-            "ru": "Лига U19"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/979.png"
         }
       ]
     },
@@ -549,7 +553,7 @@
         "en": "England"
       },
       "code": "GB",
-      "flag": "https://media.api-sports.io/football/teams/10.png",
+      "flag": "https://media.api-sports.io/flags/gb-eng.svg",
       "leagues": [
         {
           "id": 10,
@@ -559,7 +563,7 @@
           },
           "type": "National",
           "logo": "https://media.api-sports.io/football/teams/10.png",
-          "category": ["Англия", "сборная Англии", "Англии", "Английский", "Английские"]
+          "category": ["Англия", "сборная Англии", "Англии", "Английский", "Английские", "APL"]
         },
         {
           "id": 39,
@@ -569,7 +573,7 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/39.png",
-          "category": ["АПЛ", "Premier League", "epl"]
+          "category": ["АПЛ", "Premier League", "epl", "EPL"]
         },
         {
           "id": 40,
@@ -610,146 +614,371 @@
         {
           "id": 44,
           "name": {
-            "en": "FA Cup",
-            "ru": "Кубок Англии"
+            "en": "FA WSL",
+            "ru": "Кубок FA WSL - Женщины"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/44.png"
+        },
+        {
+          "id": 698,
+          "name": {
+            "en": "FA Women's Cup",
+            "ru": "Кубок FA - Женщины"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/44.png"
+          "logo": "https://media.api-sports.io/football/leagues/698.png"
         },
         {
           "id": 45,
           "name": {
-            "en": "EFL Cup",
-            "ru": "Кубок Лиги"
+            "en": "FA Cup",
+            "ru": "Кубок FA"
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/45.png"
         },
         {
-          "id": 46,
-          "name": {
-            "en": "Community Shield",
-            "ru": "Суперкубок"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/46.png"
-        },
-        {
           "id": 47,
           "name": {
-            "en": "EFL Trophy",
-            "ru": "Трофей Футбольной лиги"
+            "en": "FA Trophy",
+            "ru": "Трофей FA"
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/47.png"
         },
         {
-          "id": 48,
+          "id": 528,
           "name": {
-            "en": "National League N / S",
-            "ru": "Национальная лига Север/Юг"
+            "en": "FA Community Shield",
+            "ru": "Суперкубок FA"
           },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/48.png"
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/528.png"
         },
         {
-          "id": 49,
-          "name": {
-            "en": "Women's Super League",
-            "ru": "Женская Суперлига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/49.png"
-        },
-        {
-          "id": 50,
-          "name": {
-            "en": "Women's Championship",
-            "ru": "Женский чемпионат"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/50.png"
-        },
-        {
-          "id": 117,
-          "name": {
-            "en": "U21 Premier League",
-            "ru": "Премьер Лига U21"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/117.png"
-        },
-        {
-          "id": 900,
+          "id": 871,
           "name": {
             "en": "Premier League Cup",
             "ru": "Кубок Премьер Лиги"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/900.png"
+          "logo": "https://media.api-sports.io/football/leagues/871.png"
         },
         {
-          "id": 901,
+          "id": 670,
+          "name": {
+            "en": "FA Community Shield - Women",
+            "ru": "Суперкубок FA - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/670.png"
+        },
+        {
+          "id": 46,
+          "name": {
+            "en": "EFL Trophy",
+            "ru": "Трофей EFL"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/46.png"
+        },
+        {
+          "id": 48,
+          "name": {
+            "en": "League Cup",
+            "ru": "Кубок лиги"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/48.png"
+        },
+        {
+          "id": 49,
+          "name": {
+            "en": "National League - Play-offs",
+            "ru": "Национальная Лига - Плей-офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/49.png"
+        },
+        {
+          "id": 984,
+          "name": {
+            "en": "National League - North - Play-offs",
+            "ru": "Национальная Лига - Север - Плей-офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/984.png"
+        },
+        {
+          "id": 985,
+          "name": {
+            "en": "National League - South - Play-offs",
+            "ru": "Национальная Лига - Юг - Плей-офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/985.png"
+        },
+        {
+          "id": 52,
+          "name": {
+            "en": "Non League Div One - Isthmian North",
+            "ru": "Non League Div One - Истмийская лига Север"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/52.png"
+        },
+        {
+          "id": 53,
+          "name": {
+            "en": "Non League Div One - Isthmian South Central",
+            "ru": "Non League Div One - Истмийская лига Юг Центр"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/53.png"
+        },
+        {
+          "id": 54,
+          "name": {
+            "en": "Non League Div One - Northern West",
+            "ru": "Non League Div One - Северо Запад"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/54.png"
+        },
+        {
+          "id": 55,
+          "name": {
+            "en": "Non League Div One - Northern Midlands",
+            "ru": "Non League Div One - Северный Мидлендс"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/55.png"
+        },
+        {
+          "id": 56,
+          "name": {
+            "en": "Non League Div One - Southern South",
+            "ru": "Non League Div One - Южный Юг"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/56.png"
+        },
+        {
+          "id": 57,
+          "name": {
+            "en": "Non League Div One - Isthmian South East",
+            "ru": "Non League Div One - Истмийская лига Юго Восток"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/57.png"
+        },
+        {
+          "id": 932,
+          "name": {
+            "en": "Non League Div One - Northern East",
+            "ru": "Non League Div One - Северо Восток"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/932.png"
+        },
+        {
+          "id": 933,
+          "name": {
+            "en": "Non League Div One - Southern Central",
+            "ru": "Non League Div One - Южный Центральный"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/933.png"
+        },
+        {
+          "id": 58,
+          "name": {
+            "en": "Non League Premier - Isthmian",
+            "ru": "Non League Premier - Истмийская лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/58.png"
+        },
+        {
+          "id": 993,
+          "name": {
+            "en": "Non League Premier - Isthmian - Play-offs",
+            "ru": "Non League Premier - Истмийская лига - Плей-Офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/993.png"
+        },
+        {
+          "id": 994,
+          "name": {
+            "en": "Non League Premier - Northern - Play-offs",
+            "ru": "Non League Premier - Северная - Плей-Офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/994.png"
+        },
+        {
+          "id": 995,
+          "name": {
+            "en": "Non League Premier - Southern South - Play-offs",
+            "ru": "Non League Premier - Южный Юг - Плей-Офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/995.png"
+        },
+        {
+          "id": 996,
+          "name": {
+            "en": "Non League Premier - Southern Central - Play-offs",
+            "ru": "Non League Premier - Южный Центральный - Плей-Офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/996.png"
+        },
+        {
+          "id": 59,
+          "name": {
+            "en": "Non League Premier - Northern",
+            "ru": "Non League Premier - Север"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/59.png"
+        },
+        {
+          "id": 60,
+          "name": {
+            "en": "Non League Premier - Southern South",
+            "ru": "Non League Premier - Южный Юг"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/60.png"
+        },
+        {
+          "id": 931,
+          "name": {
+            "en": "Non League Premier - Southern Central",
+            "ru": "Non League Premier - Южный Центральный"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/931.png"
+        },
+        {
+          "id": 986,
+          "name": {
+            "en": "Non League Div One - Play-offs",
+            "ru": "Non League Div One - Плей - Офф"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/986.png"
+        },
+        {
+          "id": 987,
+          "name": {
+            "en": "U18 Premier League - Championship",
+            "ru": "Премьер Лига U18 - Чемпионшип"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/987.png"
+        },
+        {
+          "id": 50,
+          "name": {
+            "en": "National League - North",
+            "ru": "Национальная Лига - Север"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/50.png"
+        },
+        {
+          "id": 51,
+          "name": {
+            "en": "National League - South",
+            "ru": "Национальная лига - Юг"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/51.png"
+        },
+        {
+          "id": 1156,
+          "name": {
+            "en": "National League Cup",
+            "ru": "Кубок Национальной Лиги"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1156.png"
+        },
+        {
+          "id": 695,
+          "name": {
+            "en": "U18 Premier League - North",
+            "ru": "Премьер Лига U18 - Север"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/695.png"
+        },
+        {
+          "id": 696,
+          "name": {
+            "en": "U18 Premier League - South",
+            "ru": "Премьер Лига U18 - Юг"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/696.png"
+        },
+        {
+          "id": 697,
+          "name": {
+            "en": "WSL Cup",
+            "ru": "Кубок WSL"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/697.png"
+        },
+        {
+          "id": 699,
+          "name": {
+            "en": "Women's Championship",
+            "ru": "Чемпионат среди Женщин"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/699.png"
+        },
+        {
+          "id": 702,
           "name": {
             "en": "Premier League 2 Division One",
-            "ru": "Премьер Лига 2 Дивизион Один"
+            "ru": "Премьер Лига 2 Первый дивизион"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/901.png"
+          "logo": "https://media.api-sports.io/football/leagues/702.png"
         },
         {
-          "id": 902,
+          "id": 703,
           "name": {
-            "en": "Premier League 2 Division Two",
-            "ru": "Премьер Лига 2 Дивизион Два"
+            "en": "Professional Development League",
+            "ru": "Лига профессионального развития"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/902.png"
+          "logo": "https://media.api-sports.io/football/leagues/703.png"
         },
         {
-          "id": 903,
+          "id": 1068,
           "name": {
             "en": "FA Youth Cup",
-            "ru": "Молодежный Кубок Англии"
+            "ru": "Юношеский кубок FA"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/903.png"
+          "logo": "https://media.api-sports.io/football/leagues/1068.png"
         },
         {
-          "id": 904,
+          "id": 1022,
           "name": {
-            "en": "U18 Premier League",
-            "ru": "Премьер Лига U18"
+            "en": "Premier League - Summer Series",
+            "ru": "Премьер Лига - Летняя серия"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/904.png"
-        },
-        {
-          "id": 905,
-          "name": {
-            "en": "U18 Professional Development League",
-            "ru": "Профессиональная Лига Развития U18"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/905.png"
-        },
-        {
-          "id": 906,
-          "name": {
-            "en": "U18 Premier League Cup",
-            "ru": "Кубок Премьер Лиги U18"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/906.png"
-        },
-        {
-          "id": 920,
-          "name": {
-            "en": "U18 League Cup",
-            "ru": "Кубок Лиги U18"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/920.png"
+          "logo": "https://media.api-sports.io/football/leagues/1022.png"
         }
       ]
     },
@@ -1202,13 +1431,13 @@
           "category": ["Беларусь", "сборная Беларуси", "Беларуси", "Беларусский", "Беларусские"]
         },
         {
-          "id": 118,
+          "id": 116,
           "name": {
-            "en": "2. Division",
-            "ru": "2. Дивизион"
+            "en": "Premier League",
+            "ru": "Премьер-лига"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/118.png"
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
         },
         {
           "id": 117,
@@ -1220,13 +1449,13 @@
           "logo": "https://media.api-sports.io/football/leagues/117.png"
         },
         {
-          "id": 116,
+          "id": 118,
           "name": {
-            "en": "Premier League",
-            "ru": "Премьер-лига"
+            "en": "2. Division",
+            "ru": "2. Дивизион"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
+          "logo": "https://media.api-sports.io/football/leagues/118.png"
         },
         {
           "id": 486,
@@ -1635,6 +1864,15 @@
           "category": ["Болгария", "сборная Болгарии", "Болгарии", "Болгарский", "Болгарские"]
         },
         {
+          "id": 172,
+          "name": {
+            "en": "First League",
+            "ru": "Первая Лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/172.png"
+        },
+        {
           "id": 173,
           "name": {
             "en": "Second League",
@@ -1651,15 +1889,6 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/174.png"
-        },
-        {
-          "id": 172,
-          "name": {
-            "en": "First League",
-            "ru": "Первая Лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
         },
         {
           "id": 178,
@@ -1774,15 +2003,6 @@
           "category": ["Босния и Герцеговина", "сборная Боснии и Герцеговины", "Боснии и Герцеговины", "Боснийский", "Боснийские"]
         },
         {
-          "id": 314,
-          "name": {
-            "en": "Cup",
-            "ru": "Кубок"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/314.png"
-        },
-        {
           "id": 315,
           "name": {
             "en": "Premijer Liga",
@@ -1790,6 +2010,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        {
+          "id": 314,
+          "name": {
+            "en": "Cup",
+            "ru": "Кубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/314.png"
         },
         {
           "id": 316,
@@ -1940,6 +2169,15 @@
           "logo": "https://media.api-sports.io/football/leagues/522.png"
         },
         {
+          "id": 1134,
+          "name": {
+            "en": "Amazonense - 2",
+            "ru": "Амазоненсе - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1134.png"
+        },
+        {
           "id": 77,
           "name": {
             "en": "Alagoano",
@@ -1956,15 +2194,6 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/613.png"
-        },
-        {
-          "id": 620,
-          "name": {
-            "en": "Cearense - 2",
-            "ru": "Сеаренсе - 2"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/620.png"
         },
         {
           "id": 625,
@@ -2012,6 +2241,15 @@
           "logo": "https://media.api-sports.io/football/leagues/478.png"
         },
         {
+          "id": 1150,
+          "name": {
+            "en": "Gaúcho - 3",
+            "ru": "Гаучо - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1150.png"
+        },
+        {
           "id": 602,
           "name": {
             "en": "Baiano - 1",
@@ -2048,15 +2286,6 @@
           "logo": "https://media.api-sports.io/football/leagues/605.png"
         },
         {
-          "id": 606,
-          "name": {
-            "en": "Paranaense - 1",
-            "ru": "Паранаенсе - 1"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/606.png"
-        },
-        {
           "id": 607,
           "name": {
             "en": "Roraimense",
@@ -2075,6 +2304,15 @@
           "logo": "https://media.api-sports.io/football/leagues/608.png"
         },
         {
+          "id": 1148,
+          "name": {
+            "en": "Maranhense - 2",
+            "ru": "Мараньенсе - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1148.png"
+        },
+        {
           "id": 609,
           "name": {
             "en": "Cearense - 1",
@@ -2082,6 +2320,33 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/609.png"
+        },
+        {
+          "id": 620,
+          "name": {
+            "en": "Cearense - 2",
+            "ru": "Сеаренсе - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/620.png"
+        },
+        {
+          "id": 1124,
+          "name": {
+            "en": "Cearense - 3",
+            "ru": "Сеаренсе - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1124.png"
+        },
+        {
+          "id": 1112,
+          "name": {
+            "en": "Cearense U20",
+            "ru": "Сеаренсе U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1112.png"
         },
         {
           "id": 610,
@@ -2093,6 +2358,15 @@
           "logo": "https://media.api-sports.io/football/leagues/610.png"
         },
         {
+          "id": 1141,
+          "name": {
+            "en": "Brasiliense B",
+            "ru": "Бразилиенсе B"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1141.png"
+        },
+        {
           "id": 611,
           "name": {
             "en": "Capixaba",
@@ -2100,6 +2374,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/611.png"
+        },
+        {
+          "id": 1147,
+          "name": {
+            "en": "Capixaba B",
+            "ru": "Капиксаба B"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1147.png"
         },
         {
           "id": 612,
@@ -2111,6 +2394,15 @@
           "logo": "https://media.api-sports.io/football/leagues/612.png"
         },
         {
+          "id": 606,
+          "name": {
+            "en": "Paranaense - 1",
+            "ru": "Паранаенсе - 1"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/606.png"
+        },
+        {
           "id": 614,
           "name": {
             "en": "Paranaense - 2",
@@ -2118,6 +2410,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/614.png"
+        },
+        {
+          "id": 1138,
+          "name": {
+            "en": "Paranaense - 3",
+            "ru": "Паранаенсе - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1138.png"
         },
         {
           "id": 615,
@@ -2138,6 +2439,24 @@
           "logo": "https://media.api-sports.io/football/leagues/616.png"
         },
         {
+          "id": 1149,
+          "name": {
+            "en": "Potiguar - 2",
+            "ru": "Потигуар - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1149.png"
+        },
+        {
+          "id": 1139,
+          "name": {
+            "en": "Potiguar - U20",
+            "ru": "Потигуар - U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1139.png"
+        },
+        {
           "id": 617,
           "name": {
             "en": "Copa do Brasil U20",
@@ -2156,15 +2475,6 @@
           "logo": "https://media.api-sports.io/football/leagues/618.png"
         },
         {
-          "id": 619,
-          "name": {
-            "en": "Mineiro - 2",
-            "ru": "Минейро - 2"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/619.png"
-        },
-        {
           "id": 621,
           "name": {
             "en": "Piauiense",
@@ -2181,6 +2491,24 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/622.png"
+        },
+        {
+          "id": 1125,
+          "name": {
+            "en": "Pernambucano - 2",
+            "ru": "Пернамбукано - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1125.png"
+        },
+        {
+          "id": 1151,
+          "name": {
+            "en": "Pernambucano - 3",
+            "ru": "Пернамбукано - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1151.png"
         },
         {
           "id": 623,
@@ -2210,6 +2538,15 @@
           "logo": "https://media.api-sports.io/football/leagues/626.png"
         },
         {
+          "id": 1135,
+          "name": {
+            "en": "Sergipano - 2",
+            "ru": "Сергипано - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1135.png"
+        },
+        {
           "id": 627,
           "name": {
             "en": "Paraense",
@@ -2219,13 +2556,31 @@
           "logo": "https://media.api-sports.io/football/leagues/627.png"
         },
         {
-          "id": 628,
+          "id": 1145,
           "name": {
-            "en": "Goiano - 1",
-            "ru": "Гояно - 1"
+            "en": "Paraense B1",
+            "ru": "Параенсе B1"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/628.png"
+          "logo": "https://media.api-sports.io/football/leagues/1145.png"
+        },
+        {
+          "id": 1115,
+          "name": {
+            "en": "Paraense B2",
+            "ru": "Параенсе B2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1115.png"
+        },
+        {
+          "id": 1157,
+          "name": {
+            "en": "Paraense U20",
+            "ru": "Параенсе U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1157.png"
         },
         {
           "id": 629,
@@ -2235,6 +2590,24 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/629.png"
+        },
+        {
+          "id": 619,
+          "name": {
+            "en": "Mineiro - 2",
+            "ru": "Минейро - 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/619.png"
+        },
+        {
+          "id": 1142,
+          "name": {
+            "en": "Mineiro - 3",
+            "ru": "Минейро - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1142.png"
         },
         {
           "id": 630,
@@ -2271,6 +2644,15 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/740.png"
+        },
+        {
+          "id": 1128,
+          "name": {
+            "en": "Brasileiro U17",
+            "ru": "Бразильский Чемпионат U17"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1128.png"
         },
         {
           "id": 741,
@@ -2318,6 +2700,24 @@
           "logo": "https://media.api-sports.io/football/leagues/936.png"
         },
         {
+          "id": 1154,
+          "name": {
+            "en": "Catarinense - 3",
+            "ru": "Катариненсе - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1154.png"
+        },
+        {
+          "id": 628,
+          "name": {
+            "en": "Goiano - 1",
+            "ru": "Гояно - 1"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
+        },
+        {
           "id": 1030,
           "name": {
             "en": "Goiano - 2",
@@ -2325,6 +2725,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/1030.png"
+        },
+        {
+          "id": 1133,
+          "name": {
+            "en": "Goiano - 3",
+            "ru": "Гояно - 3"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1133.png"
         },
         {
           "id": 1035,
@@ -2352,6 +2761,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/1037.png"
+        },
+        {
+          "id": 1120,
+          "name": {
+            "en": "Paraibano U20",
+            "ru": "Параибано U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1120.png"
         },
         {
           "id": 1059,
@@ -2444,6 +2862,15 @@
           "logo": "https://media.api-sports.io/football/leagues/1088.png"
         },
         {
+          "id": 1143,
+          "name": {
+            "en": "Estadual Junior U20",
+            "ru": "Стэйт Юниор U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1143.png"
+        },
+        {
           "id": 1096,
           "name": {
             "en": "Matogrossense 2",
@@ -2489,6 +2916,24 @@
           "logo": "https://media.api-sports.io/football/leagues/1106.png"
         },
         {
+          "id": 1155,
+          "name": {
+            "en": "Carioca B2",
+            "ru": "Кариока B2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1155.png"
+        },
+        {
+          "id": 1114,
+          "name": {
+            "en": "Carioca U20",
+            "ru": "Кариока U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1114.png"
+        },
+        {
           "id": 1107,
           "name": {
             "en": "Mineiro U20",
@@ -2505,6 +2950,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/1108.png"
+        },
+        {
+          "id": 1146,
+          "name": {
+            "en": "Alagoano - 2",
+            "ru": "Алагоано - 2"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1146.png"
         },
         {
           "id": 1110,
@@ -2632,15 +3086,6 @@
           "category": ["Венгрия", "сборная Венгрии", "Венгрии", "Венгерский", "Венгерские"]
         },
         {
-          "id": 272,
-          "name": {
-            "en": "NB II",
-            "ru": "NB II"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/272.png"
-        },
-        {
           "id": 271,
           "name": {
             "en": "NB I",
@@ -2648,6 +3093,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        {
+          "id": 272,
+          "name": {
+            "en": "NB II",
+            "ru": "NB II"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/272.png"
         },
         {
           "id": 273,
@@ -2724,6 +3178,15 @@
           "category": ["Венесуэла", "сборная Венесуэлы", "Венесуэлы", "Венесуэльский", "Венесуэльские"]
         },
         {
+          "id": 299,
+          "name": {
+            "en": "Primera División",
+            "ru": "Первый дивизион"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/299.png"
+        },
+        {
           "id": 300,
           "name": {
             "en": "Segunda División",
@@ -2733,13 +3196,13 @@
           "logo": "https://media.api-sports.io/football/leagues/300.png"
         },
         {
-          "id": 299,
+          "id": 1113,
           "name": {
-            "en": "Primera División",
-            "ru": "Первый дивизион"
+            "en": "Copa Venezuela",
+            "ru": "Кубок Венесуэлы"
           },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/299.png"
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1113.png"
         }
       ]
     },
@@ -2921,6 +3384,15 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/966.png"
+        },
+        {
+          "id": 1144,
+          "name": {
+            "en": "Super Cup",
+            "ru": "Супер Кубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1144.png"
         }
       ]
     },
@@ -3082,7 +3554,8 @@
             "ru": "Кубок Германии"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/81.png"
+          "logo": "https://media.api-sports.io/football/leagues/81.png",
+          "category": ["Кубок Германии", "DFB-Pokal"]
         },
         {
           "id": 82,
@@ -3094,10 +3567,19 @@
           "logo": "https://media.api-sports.io/football/leagues/82.png"
         },
         {
+          "id": 1137,
+          "name": {
+            "en": "Supercup der Frauen",
+            "ru": "Суперкубок - Женщины"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1137.png"
+        },
+        {
           "id": 488,
           "name": {
             "en": "U19 Bundesliga",
-            "ru": "Молодёжная Бундеслига"
+            "ru": "Молодежная Бундеслига"
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/488.png"
@@ -3377,7 +3859,7 @@
         {
           "id": 1042,
           "name": {
-            "en": "Суперкубок",
+            "en": "Super Cup",
             "ru": "Суперкубок"
           },
           "type": "Cup",
@@ -4074,15 +4556,6 @@
           "category": ["Израиль", "сборная Израиля", "Израиля", "Израильский", "Израильские"]
         },
         {
-          "id": 382,
-          "name": {
-            "en": "Liga Leumit",
-            "ru": "Лига Леумит"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/382.png"
-        },
-        {
           "id": 383,
           "name": {
             "en": "Ligat Ha'al",
@@ -4090,6 +4563,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/383.png"
+        },
+        {
+          "id": 382,
+          "name": {
+            "en": "Liga Leumit",
+            "ru": "Лига Леумит"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/382.png"
         },
         {
           "id": 496,
@@ -4148,6 +4630,15 @@
           "category": ["Индия", "сборная Индии", "Индии", "Индийский", "Индийские", "Индус"]
         },
         {
+          "id": 323,
+          "name": {
+            "en": "Indian Super League",
+            "ru": "Индийская суперлига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/323.png"
+        },
+        {
           "id": 324,
           "name": {
             "en": "I-League",
@@ -4164,15 +4655,6 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/545.png"
-        },
-        {
-          "id": 323,
-          "name": {
-            "en": "Indian Super League",
-            "ru": "Индийская суперлига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/323.png"
         },
         {
           "id": 325,
@@ -4363,6 +4845,15 @@
           "category": ["сборная Ирана", "Ирана", "Иранский", "Иранские"]
         },
         {
+          "id": 290,
+          "name": {
+            "en": "Persian Gulf Pro League",
+            "ru": "Персидская гольф-про лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        {
           "id": 291,
           "name": {
             "en": "Azadegan League",
@@ -4379,15 +4870,6 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/495.png"
-        },
-        {
-          "id": 290,
-          "name": {
-            "en": "Persian Gulf Pro League",
-            "ru": "Персидская гольф-про лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
         },
         {
           "id": 905,
@@ -4417,6 +4899,15 @@
           "type": "National",
           "logo": "https://media.api-sports.io/football/teams/1119.png",
           "category": ["Ирландия", "сборная Ирландии", "Ирландии", "Ирландский", "Ирландские"]
+        },
+        {
+          "id": 357,
+          "name": {
+            "en": "Premier Division",
+            "ru": "Премьер-дивизион"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
         },
         {
           "id": 358,
@@ -4453,15 +4944,6 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/546.png"
-        },
-        {
-          "id": 357,
-          "name": {
-            "en": "Premier Division",
-            "ru": "Премьер-дивизион"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
         }
       ]
     },
@@ -4956,7 +5438,7 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/135.png",
-          "category": ["seriea", "Серия А"]
+          "category": ["seriea", "Серия А", "Serie A", "чемпионат Италии"]
         },
         {
           "id": 547,
@@ -5569,6 +6051,16 @@
           "category": ["Кипр", "сборная Кипра", "Кипра", "Киприот", "Киприоты"]
         },
         {
+          "id": 318,
+          "name": {
+            "en": "1. Division",
+            "ru": "1. Дивизион"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/318.png",
+          "category": ["Cypriot First Division"]
+        },
+        {
           "id": 319,
           "name": {
             "en": "2. Division",
@@ -5594,15 +6086,6 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/321.png"
-        },
-        {
-          "id": 318,
-          "name": {
-            "en": "1. Division",
-            "ru": "1. Дивизион"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
         },
         {
           "id": 852,
@@ -6343,19 +6826,19 @@
     {
       "name": {
         "ru": "Макао",
-        "en": "Macau"
+        "en": "Macao"
       },
       "code": "MO",
       "flag": "https://media.api-sports.io/flags/mo.svg",
       "leagues": [
         {
-          "id": 1544,
+          "id": 4767,
           "name": {
-            "en": "Macau National Team",
+            "en": "Macao National Team",
             "ru": "Сборная Макао"
           },
           "type": "National",
-          "logo": "https://media.api-sports.io/flags/mo.svg",
+          "logo": "https://media.api-sports.io/football/teams/4767.png",
           "category": ["Макао", "сборная Макао", "Макаоец ", "Макаоцы "]
         },
         {
@@ -6670,6 +7153,24 @@
           "logo": "https://media.api-sports.io/football/leagues/662.png"
         },
         {
+          "id": 857,
+          "name": {
+            "en": "Campeón de Campeones",
+            "ru": "Чемпион чемпионов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/857.png"
+        },
+        {
+          "id": 861,
+          "name": {
+            "en": "U20 League",
+            "ru": "Кубок U20"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/861.png"
+        },
+        {
           "id": 673,
           "name": {
             "en": "Liga MX Femenil",
@@ -6695,6 +7196,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/872.png"
+        },
+        {
+          "id": 1017,
+          "name": {
+            "en": "U23 League",
+            "ru": "Лига U23"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1017.png"
         }
       ]
     },
@@ -6771,6 +7281,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/764.png"
+        },
+        {
+          "id": 1131,
+          "name": {
+            "en": "Super Cup",
+            "ru": "Суперкубок"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1131.png"
         }
       ]
     },
@@ -6981,15 +7500,6 @@
           "logo": "https://media.api-sports.io/football/leagues/93.png"
         },
         {
-          "id": 724,
-          "name": {
-            "en": "U18 Divisie 1",
-            "ru": "U18 Дивизи 1"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/724.png"
-        },
-        {
           "id": 675,
           "name": {
             "en": "U21 Divisie 1",
@@ -6997,6 +7507,24 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/675.png"
+        },
+        {
+          "id": 1152,
+          "name": {
+            "en": "U19 Divisie 1",
+            "ru": "U19 Дивизи 1"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1152.png"
+        },
+        {
+          "id": 724,
+          "name": {
+            "en": "U18 Divisie 1",
+            "ru": "U18 Дивизи 1"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/724.png"
         },
         {
           "id": 883,
@@ -7082,6 +7610,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/280.png"
+        },
+        {
+          "id": 1127,
+          "name": {
+            "en": "Chatham Cup",
+            "ru": "Кубок Чантам"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1127.png"
         },
         {
           "id": 957,
@@ -7313,15 +7850,6 @@
           "category": ["Объединенные Арабские Эмираты", "ОАЭ", "сборная Объединённых Арабских Эмиратов", "сборная ОАЭ", "Объединённых Арабских Эмиратов", "Эмиратец", "Эмиратцы"]
         },
         {
-          "id": 302,
-          "name": {
-            "en": "League Cup",
-            "ru": "Кубок Лиги"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/302.png"
-        },
-        {
           "id": 301,
           "name": {
             "en": "Pro League",
@@ -7329,6 +7857,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        {
+          "id": 302,
+          "name": {
+            "en": "League Cup",
+            "ru": "Кубок Лиги"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/302.png"
         },
         {
           "id": 303,
@@ -7642,15 +8179,6 @@
           "category": ["Польша", "сборная Польши", "Польши", "Поляк", "Поляки"]
         },
         {
-          "id": 107,
-          "name": {
-            "en": "I Liga",
-            "ru": "Первая лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/107.png"
-        },
-        {
           "id": 106,
           "name": {
             "en": "Ekstraklasa",
@@ -7659,6 +8187,15 @@
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/106.png",
           "category": ["Ekstraklasa"]
+        },
+        {
+          "id": 107,
+          "name": {
+            "en": "I Liga",
+            "ru": "Первая лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/107.png"
         },
         {
           "id": 108,
@@ -7768,7 +8305,8 @@
             "ru": "Премьер-лига"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
+          "logo": "https://media.api-sports.io/football/leagues/94.png",
+          "category": ["Primeira Liga"]
         },
         {
           "id": 95,
@@ -7960,7 +8498,7 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/235.png",
-          "category": ["РПЛ", "Российская Премьер-Лига", "МИР РПЛ", "rpl"]
+          "category": ["РПЛ", "Российская Премьер-Лига", "МИР РПЛ", "rpl", "РФС", "RFU", "RPL", "РФПЛ"]
         },
         {
           "id": 236,
@@ -7980,7 +8518,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/237.png",
-          "category": ["Кубок России"]
+          "category": ["Кубок России", "Russian Cup"]
         },
         {
           "id": 238,
@@ -8080,6 +8618,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/1025.png"
+        },
+        {
+          "id": 1121,
+          "name": {
+            "en": "Second League A - Promotion Play-offs",
+            "ru": "Вторая Лига А - Плей-офф Продвижение"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1121.png"
         }
       ]
     },
@@ -8604,15 +9151,6 @@
           "category": ["Сербия", "сборная Сербии", "Сербии", "Серб", "Сербы"]
         },
         {
-          "id": 287,
-          "name": {
-            "en": "Prva Liga",
-            "ru": "Первая Лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/287.png"
-        },
-        {
           "id": 286,
           "name": {
             "en": "Super Liga",
@@ -8620,6 +9158,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        {
+          "id": 287,
+          "name": {
+            "en": "Prva Liga",
+            "ru": "Первая Лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/287.png"
         },
         {
           "id": 575,
@@ -8687,15 +9234,6 @@
           "category": ["Сингапур", "сборная Сингапура", "Сингапура", "Сингапурец", "Сингапурцы"]
         },
         {
-          "id": 505,
-          "name": {
-            "en": "League Cup",
-            "ru": "Кубок Лиги"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/505.png"
-        },
-        {
           "id": 368,
           "name": {
             "en": "Premier League",
@@ -8703,6 +9241,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        {
+          "id": 505,
+          "name": {
+            "en": "League Cup",
+            "ru": "Кубок Лиги"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/505.png"
         },
         {
           "id": 959,
@@ -8763,15 +9310,6 @@
           "category": ["Словакия", "сборная Словакии", "Словакии", "Словак", "Словаки"]
         },
         {
-          "id": 506,
-          "name": {
-            "en": "2. liga",
-            "ru": "2. лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/506.png"
-        },
-        {
           "id": 332,
           "name": {
             "en": "Super Liga",
@@ -8779,6 +9317,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/332.png"
+        },
+        {
+          "id": 506,
+          "name": {
+            "en": "2. liga",
+            "ru": "2. лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/506.png"
         },
         {
           "id": 643,
@@ -8939,6 +9486,15 @@
           "logo": "https://media.api-sports.io/football/leagues/257.png"
         },
         {
+          "id": 1130,
+          "name": {
+            "en": "USL Super League",
+            "ru": "Суперлига USL"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1130.png"
+        },
+        {
           "id": 255,
           "name": {
             "en": "USL Championship",
@@ -8973,6 +9529,42 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/523.png"
+        },
+        {
+          "id": 1116,
+          "name": {
+            "en": "WPSL",
+            "ru": "WPSL"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1116.png"
+        },
+        {
+          "id": 1117,
+          "name": {
+            "en": "USL W League",
+            "ru": "USL Лига - Женщины"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1117.png"
+        },
+        {
+          "id": 1118,
+          "name": {
+            "en": "NPSL",
+            "ru": "NPSL"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1118.png"
+        },
+        {
+          "id": 1119,
+          "name": {
+            "en": "NWSL - Liga MXF Summer Cup",
+            "ru": "NWSL - Летний кубок Лиги MXF"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1119.png"
         },
         {
           "id": 254,
@@ -9156,15 +9748,6 @@
           "category": ["Таиланд", "сборная Таиланда", "Таиланда", "Тайец", "Тайцы"]
         },
         {
-          "id": 297,
-          "name": {
-            "en": "Thai League 2",
-            "ru": "Тайская лига 2"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/297.png"
-        },
-        {
           "id": 296,
           "name": {
             "en": "Thai League 1",
@@ -9172,6 +9755,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        {
+          "id": 297,
+          "name": {
+            "en": "Thai League 2",
+            "ru": "Тайская лига 2"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/297.png"
         },
         {
           "id": 298,
@@ -9538,7 +10130,8 @@
             "ru": "Супер Лига"
           },
           "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/369.png"
+          "logo": "https://media.api-sports.io/football/leagues/369.png",
+          "category": ["Узбекская Премьер Лига", "Чемпионат Узбекистана", "Uzbekistan Premier League", "Uzbekistan Championship"]
         },
         {
           "id": 830,
@@ -9595,7 +10188,7 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/333.png",
-          "category": ["УПЛ", "украинская премьер-лига"]
+          "category": ["УПЛ", "украинская премьер-лига", "Первая лига Украины", "First League of Ukraine", "Чемпионат Украины", "UPL", "Ukrainian Championship"]
         },
         {
           "id": 336,
@@ -9613,7 +10206,8 @@
             "ru": "Кубок"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/335.png"
+          "logo": "https://media.api-sports.io/football/leagues/335.png",
+          "category": ["Кубок Украины"]
         },
         {
           "id": 334,
@@ -9654,8 +10248,8 @@
         {
           "id": 870,
           "name": {
-            "en": "Premier League",
-            "ru": "Премьер-лига"
+            "en": "Crimea Premier League",
+            "ru": "Крымская Премьер-лига"
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/870.png"
@@ -9925,15 +10519,6 @@
           "category": ["Финляндия", "сборная Финляндии", "Финляндии", "Финн", "Финны"]
         },
         {
-          "id": 249,
-          "name": {
-            "en": "Kakkonen - Lohko C",
-            "ru": "Kakkonen - Лохко С"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/249.png"
-        },
-        {
           "id": 244,
           "name": {
             "en": "Veikkausliiga",
@@ -9950,6 +10535,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/245.png"
+        },
+        {
+          "id": 249,
+          "name": {
+            "en": "Kakkonen - Lohko C",
+            "ru": "Kakkonen - Лохко С"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/249.png"
         },
         {
           "id": 246,
@@ -10060,7 +10654,7 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/61.png",
-          "category": ["ligue1"]
+          "category": ["ligue1", "Ligue 1", "Лига 1"]
         },
         {
           "id": 62,
@@ -10448,6 +11042,15 @@
           "category": ["Чехия", "сборная Чехии", "Чехии", "Чех", "Чехи"]
         },
         {
+          "id": 345,
+          "name": {
+            "en": "Czech Liga",
+            "ru": "Чешская лига"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        {
           "id": 925,
           "name": {
             "en": "Super Cup",
@@ -10464,15 +11067,6 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/346.png"
-        },
-        {
-          "id": 345,
-          "name": {
-            "en": "Czech Liga",
-            "ru": "Чешская лига"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
         },
         {
           "id": 353,
@@ -10612,15 +11206,6 @@
           "category": ["Чили", "сборная Чили", "Чилиец", "Чилийцы"]
         },
         {
-          "id": 527,
-          "name": {
-            "en": "Super Cup",
-            "ru": "Суперкубок"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/527.png"
-        },
-        {
           "id": 265,
           "name": {
             "en": "Primera División",
@@ -10628,6 +11213,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/265.png"
+        },
+        {
+          "id": 527,
+          "name": {
+            "en": "Super Cup",
+            "ru": "Суперкубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/527.png"
         },
         {
           "id": 266,
@@ -11134,15 +11728,6 @@
           "category": ["Эквадор", "сборная Эквадора", "Эквадора", "Эквадорец", "Эквадорцы"]
         },
         {
-          "id": 243,
-          "name": {
-            "en": "Liga Pro Serie B",
-            "ru": "Лига Про Серия B"
-          },
-          "type": "League",
-          "logo": "https://media.api-sports.io/football/leagues/243.png"
-        },
-        {
           "id": 242,
           "name": {
             "en": "Liga Pro",
@@ -11150,6 +11735,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/242.png"
+        },
+        {
+          "id": 243,
+          "name": {
+            "en": "Liga Pro Serie B",
+            "ru": "Лига Про Серия B"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/243.png"
         },
         {
           "id": 853,
@@ -11235,6 +11829,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/328.png"
+        },
+        {
+          "id": 1126,
+          "name": {
+            "en": "Esiliiga B",
+            "ru": "Эсилиига B"
+          },
+          "type": "League",
+          "logo": "https://media.api-sports.io/football/leagues/1126.png"
         },
         {
           "id": 657,
@@ -11407,15 +12010,6 @@
           "category": ["Япония", "сборная Японии", "Японии", "Японец", "Японцы"]
         },
         {
-          "id": 102,
-          "name": {
-            "en": "Emperor Cup",
-            "ru": "Кубок императора"
-          },
-          "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/102.png"
-        },
-        {
           "id": 98,
           "name": {
             "en": "J1 League",
@@ -11423,6 +12017,15 @@
           },
           "type": "League",
           "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        {
+          "id": 102,
+          "name": {
+            "en": "Emperor Cup",
+            "ru": "Кубок императора"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/102.png"
         },
         {
           "id": 99,
@@ -12757,8 +13360,8 @@
     },
     {
       "name": {
-        "ru": "Европейские турниры",
-        "en": "European tournaments"
+        "ru": "Европа",
+        "en": "Europe"
       },
       "code": "EU",
       "flag": "https://upload.wikimedia.org/wikipedia/tr/b/b9/UEFA.png",
@@ -12771,7 +13374,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/2.png",
-          "category": ["Лига чемпионов", "ucl", "UEFA Champions League", "Еврокубки"]
+          "category": ["Лига чемпионов", "ucl", "UEFA Champions League", "Еврокубки", "ЛЧ", "Чемпионов Лига", "UCL", "Champions League", "УЕФА"]
         },
         {
           "id": 3,
@@ -12781,7 +13384,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/3.png",
-          "category": ["uel", "Еврокубки", "Лига Европы"]
+          "category": ["uel", "Еврокубки", "Лига Европы", "ЛЕ", "UEL", "Лига европы", "EL", "УЕФА"]
         },
         {
           "id": 848,
@@ -12791,7 +13394,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/848.png",
-          "category": ["uecl", "Лига конференций", "Еврокубки"]
+          "category": ["uecl", "Лига конференций", "Еврокубки", "ЛК", "UECL", "Лига Конференций", "Conference League", "УЕФА"]
         },
         {
           "id": 531,
@@ -12810,7 +13413,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/5.png",
-          "category": ["unl", "лига наций"]
+          "category": ["unl", "лига наций", "UEFA Nations League", "УЕФА Лига наций", "УЕФА"]
         },
         {
           "id": 4,
@@ -12820,7 +13423,16 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/4.png",
-          "category": ["Евро-2024", "ec", "чемпионат европы"]
+          "category": ["Евро-2024", "ec", "чемпионат европы", "УЕФА"]
+        },
+        {
+          "id": 32,
+          "name": {
+            "en": "World Cup - Qualification Europe",
+            "ru": "Чемпионат Мира - Европейская Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
         },
         {
           "id": 14,
@@ -12860,6 +13472,42 @@
           "logo": "https://media.api-sports.io/football/leagues/921.png"
         },
         {
+          "id": 960,
+          "name": {
+            "en": "Euro Championship - Qualification",
+            "ru": "Чемпионат Европы - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/960.png"
+        },
+        {
+          "id": 850,
+          "name": {
+            "en": "UEFA U21 Championship - Qualification",
+            "ru": "Чемпионат Европы U21 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        {
+          "id": 893,
+          "name": {
+            "en": "UEFA U19 Championship - Qualification",
+            "ru": "Чемпионат Европы U19 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        {
+          "id": 886,
+          "name": {
+            "en": "UEFA U17 Championship - Qualification",
+            "ru": "Чемпионат Европы U17 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/886.png"
+        },
+        {
           "id": 525,
           "name": {
             "en": "UEFA Champions League Women",
@@ -12876,6 +13524,24 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/743.png"
+        },
+        {
+          "id": 1083,
+          "name": {
+            "en": "UEFA Championship - Women - Qualification",
+            "ru": "Чемпионат Европы - Женщины - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1083.png"
+        },
+        {
+          "id": 880,
+          "name": {
+            "en": "World Cup - Women - Qualification Europe",
+            "ru": "Чемпионат Мира - Женщины - Европейская Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/880.png"
         },
         {
           "id": 918,
@@ -12903,6 +13569,69 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/1040.png"
+        },
+        {
+          "id": 903,
+          "name": {
+            "en": "The Atlantic Cup",
+            "ru": "Кубок Атлантики"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/903.png"
+        },
+        {
+          "id": 900,
+          "name": {
+            "en": "Tipsport Malta Cup",
+            "ru": "Типспорт Кубок Мальты"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/900.png"
+        },
+        {
+          "id": 910,
+          "name": {
+            "en": "Youth Viareggio Cup",
+            "ru": "Турнир Виареджо"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/910.png"
+        },
+        {
+          "id": 890,
+          "name": {
+            "en": "U20 Elite League",
+            "ru": "Элитная лига U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        {
+          "id": 849,
+          "name": {
+            "en": "Baltic Cup",
+            "ru": "Балтийский Кубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/849.png"
+        },
+        {
+          "id": 937,
+          "name": {
+            "en": "Emirates Cup",
+            "ru": "Кубок Эмиратов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/937.png"
+        },
+        {
+          "id": 1013,
+          "name": {
+            "en": "All-Island Cup - Women",
+            "ru": "Всеостровной кубок - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1013.png"
         }
       ]
     },
@@ -12922,7 +13651,7 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/1.png",
-          "category": ["wc", "чм", "чемпионат мира"]
+          "category": ["wc", "чм", "чемпионат мира", "FIFA", "fifa", "UEFA", "uefa"]
         },
         {
           "id": 480,
@@ -12945,13 +13674,49 @@
           "category": ["Finalissima", "Финалиссима"]
         },
         {
+          "id": 1024,
+          "name": {
+            "en": "UEFA - CONMEBOL - Club Challenge",
+            "ru": "UEFA - CONMEBOL - Клубный вызов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1024.png"
+        },
+        {
           "id": 15,
           "name": {
             "en": "FIFA Club World Cup",
             "ru": "Клубный Чемпионат мира FIFA"
           },
-          "type": "League",
+          "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/15.png"
+        },
+        {
+          "id": 26,
+          "name": {
+            "en": "International Champions Cup",
+            "ru": "Международный Кубок Чемпионов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/26.png"
+        },
+        {
+          "id": 945,
+          "name": {
+            "en": "International Champions Cup - Women",
+            "ru": "Международный Кубок Чемпионов - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/945.png"
+        },
+        {
+          "id": 37,
+          "name": {
+            "en": "World Cup - Qualification Intercontinental Play-offs",
+            "ru": "Чемпионат Мира - Межконтинентальная Квалификация - Плей-Офф"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/37.png"
         },
         {
           "id": 8,
@@ -12960,8 +13725,16 @@
             "ru": "Чемпионат мира - Женщины"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/8.png",
-          "category": ["wc", "чм", "чемпионат мира"]
+          "logo": "https://media.api-sports.io/football/leagues/8.png"
+        },
+        {
+          "id": 950,
+          "name": {
+            "en": "World Cup - U17 - Women",
+            "ru": "Чемпионат мира U17 - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/950.png"
         },
         {
           "id": 524,
@@ -12972,13 +13745,184 @@
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/524.png",
           "category": ["Olympics", "Олимпиада", "Олимпийские игры"]
+        },
+        {
+          "id": 490,
+          "name": {
+            "en": "World Cup - U20",
+            "ru": "Чемпионат Мира U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/490.png"
+        },
+        {
+          "id": 587,
+          "name": {
+            "en": "World Cup - U17",
+            "ru": "Чемпионат Мира U17"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/587.png"
+        },
+        {
+          "id": 920,
+          "name": {
+            "en": "World Cup - U20 - Women",
+            "ru": "Чемпионат Мира U20 - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/920.png"
+        },
+        {
+          "id": 902,
+          "name": {
+            "en": "Algarve Cup",
+            "ru": "Кубок Алгарве"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/902.png"
+        },
+        {
+          "id": 904,
+          "name": {
+            "en": "SheBelieves Cup",
+            "ru": "Кубок SheBelieves"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/904.png"
+        },
+        {
+          "id": 21,
+          "name": {
+            "en": "Confederations Cup",
+            "ru": "Кубок Конфедерации"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/21.png"
+        },
+        {
+          "id": 10,
+          "name": {
+            "en": "Friendlies",
+            "ru": "Товарищеские"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        {
+          "id": 667,
+          "name": {
+            "en": "Friendlies Clubs",
+            "ru": "Клубные Товарищеские"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        {
+          "id": 666,
+          "name": {
+            "en": "Friendlies - Women",
+            "ru": "Товарищеские - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/666.png"
+        },
+        {
+          "id": 766,
+          "name": {
+            "en": "China Cup",
+            "ru": "Кубок Китая"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/766.png"
+        },
+        {
+          "id": 1105,
+          "name": {
+            "en": "Olympics - Intercontinental Play-offs",
+            "ru": "Олимпийские игры - Международный Плей-Офф"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1105.png"
+        },
+        {
+          "id": 914,
+          "name": {
+            "en": "Tournoi Maurice Revello",
+            "ru": "Турнир Мориса Ревелло"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        {
+          "id": 916,
+          "name": {
+            "en": "Kirin Cup",
+            "ru": "Кубок Кирин"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/916.png"
+        },
+        {
+          "id": 919,
+          "name": {
+            "en": "Mediterranean Games",
+            "ru": "Средиземноморские игры"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        {
+          "id": 940,
+          "name": {
+            "en": "COTIF Tournament",
+            "ru": "Турнир COTIF"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/940.png"
+        },
+        {
+          "id": 941,
+          "name": {
+            "en": "Islamic Solidarity Games",
+            "ru": "Игры Исламской Солидарности"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/941.png"
+        },
+        {
+          "id": 1039,
+          "name": {
+            "en": "Premier League International Cup",
+            "ru": "Международный Кубок Премьер Лиги"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1039.png"
+        },
+        {
+          "id": 1045,
+          "name": {
+            "en": "Pan American Games",
+            "ru": "Панамериканские игры"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1045.png"
+        },
+        {
+          "id": 1038,
+          "name": {
+            "en": "King's Cup",
+            "ru": "Кубок Короля"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1038.png"
         }
       ]
     },
     {
       "name": {
-        "ru": "Азиатские турниры",
-        "en": "Asian tournaments"
+        "ru": "Азия",
+        "en": "Asia"
       },
       "code": "AN",
       "flag": "https://1000logos.net/wp-content/uploads/2016/10/AFC-Logo.png",
@@ -12990,13 +13934,15 @@
             "ru": "Лига Чемпионов АФК"
           },
           "type": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
+          "logo": "https://media.api-sports.io/football/leagues/17.png",
+          "category": ["AFC", "АФК"]
         },
         {
           "id": 18,
           "name": {
             "en": "AFC Cup",
-            "ru": "Кубок АФК"
+            "ru": "Кубок АФК",
+            "category": ["AFC", "АФК"]
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/18.png"
@@ -13005,10 +13951,47 @@
           "id": 7,
           "name": {
             "en": "AFC Asian Cup",
-            "ru": "Кубок Азии"
+            "ru": "Кубок Азии",
+            "category": ["AFC", "АФК"]
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/7.png"
+        },
+        {
+          "id": 35,
+          "name": {
+            "en": "AFC Asian Cup - Qualification",
+            "ru": "Кубок Азии - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/35.png"
+        },
+        {
+          "id": 30,
+          "name": {
+            "en": "World Cup - Qualification Asia",
+            "ru": "Чемпионат Мира - Квалификация Азия"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        {
+          "id": 807,
+          "name": {
+            "en": "AFC Challenge Cup",
+            "ru": "Кубок вызова АФК"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/807.png"
+        },
+        {
+          "id": 860,
+          "name": {
+            "en": "Arab Cup",
+            "ru": "Арабский Кубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/860.png"
         },
         {
           "id": 532,
@@ -13018,6 +14001,24 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/532.png"
+        },
+        {
+          "id": 952,
+          "name": {
+            "en": "AFC U23 Asian Cup - Qualification",
+            "ru": "Кубок Азии U23 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        {
+          "id": 1153,
+          "name": {
+            "en": "AFC U20 Asian Cup - Qualification",
+            "ru": "Кубок Азии U20 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
         },
         {
           "id": 965,
@@ -13056,6 +14057,24 @@
           "logo": "https://media.api-sports.io/football/leagues/897.png"
         },
         {
+          "id": 894,
+          "name": {
+            "en": "AFC Asian Cup - Women - Qualification",
+            "ru": "Кубок Азии - Женщины - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/894.png"
+        },
+        {
+          "id": 882,
+          "name": {
+            "en": "Olympics Women - Qualification Asia",
+            "ru": "Кубок Азии - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/882.png"
+        },
+        {
           "id": 1070,
           "name": {
             "en": "AFC U20 Asian Cup - Women",
@@ -13081,13 +14100,157 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/1132.png"
+        },
+        {
+          "id": 803,
+          "name": {
+            "en": "Asian Games",
+            "ru": "Азиатские игры"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/803.png"
+        },
+        {
+          "id": 28,
+          "name": {
+            "en": "SAFF Championship",
+            "ru": "Чемпионат SAFF"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/28.png"
+        },
+        {
+          "id": 1129,
+          "name": {
+            "en": "ASEAN Club Championship",
+            "ru": "Клубный Чемпионат ASEAN"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        {
+          "id": 24,
+          "name": {
+            "en": "AFF Championship",
+            "ru": "Чемпионат AFF"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/24.png"
+        },
+        {
+          "id": 908,
+          "name": {
+            "en": "AFF U23 Championship",
+            "ru": "Чемпионат AFF U23"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/908.png"
+        },
+        {
+          "id": 928,
+          "name": {
+            "en": "AFF U19 Championship",
+            "ru": "Чемпионат AFF U19"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/928.png"
+        },
+        {
+          "id": 1077,
+          "name": {
+            "en": "WAFF Championship U23",
+            "ru": "Чемпионат WAFF U23"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1077.png"
+        },
+        {
+          "id": 23,
+          "name": {
+            "en": "EAFF E-1 Football Championship",
+            "ru": "Чемпионат EAFF E-1"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/23.png"
+        },
+        {
+          "id": 25,
+          "name": {
+            "en": "Arabian Gulf Cup of Nations",
+            "ru": "Кубок Арабского залива"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/25.png"
+        },
+        {
+          "id": 1089,
+          "name": {
+            "en": "UAE - Qatar - Super Shield",
+            "ru": "ОАЭ - Катар - Суперкубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1089.png"
+        },
+        {
+          "id": 1123,
+          "name": {
+            "en": "Qatar - UAE Super Cup",
+            "ru": "Катар - ОАЭ - Суперкубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1123.png"
+        },
+        {
+          "id": 934,
+          "name": {
+            "en": "Arab Championship - U20",
+            "ru": "Чемпионат Арабских стран - U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/934.png"
+        },
+        {
+          "id": 911,
+          "name": {
+            "en": "Southeast Asian Games",
+            "ru": "Игры Южной Азии"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/911.png"
+        },
+        {
+          "id": 1008,
+          "name": {
+            "en": "CAFA Nations Cup",
+            "ru": "Кубок наций ФАЦА"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1008.png"
+        },
+        {
+          "id": 768,
+          "name": {
+            "en": "Arab Club Champions Cup",
+            "ru": "Арабский кубок чемпионов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/768.png"
+        },
+        {
+          "id": 769,
+          "name": {
+            "en": "Premier League Asia Trophy",
+            "ru": "Премьер-Лига Азия Трофи"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/769.png"
         }
       ]
     },
     {
       "name": {
-        "ru": "Сев и Центр Американские турниры",
-        "en": "North-Central American tournaments"
+        "ru": "Северная и Центральная Америка",
+        "en": "North and Central America"
       },
       "code": "NA-CA",
       "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Concacaf_logo.svg/200px-Concacaf_logo.svg.png",
@@ -13104,8 +14267,8 @@
         {
           "id": 16,
           "name": {
-            "en": "CONCACAF Champions Cup",
-            "ru": "Кубок Чемпионов КОНКАКАФ"
+            "en": "CONCACAF Champions League",
+            "ru": "Лига Чемпионов КОНКАКАФ"
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/16.png"
@@ -13118,6 +14281,33 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        {
+          "id": 858,
+          "name": {
+            "en": "CONCACAF Gold Cup - Qualification",
+            "ru": "Золотой кубок КОНКАКАФ - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/858.png"
+        },
+        {
+          "id": 808,
+          "name": {
+            "en": "CONCACAF Nations League - Qualification",
+            "ru": "Лига Наций КОНКАКАФ - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/808.png"
+        },
+        {
+          "id": 31,
+          "name": {
+            "en": "World Cup - Qualification CONCACAF",
+            "ru": "Чемпионат Мира - Квалификация CONCACAF"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
         },
         {
           "id": 856,
@@ -13138,6 +14328,24 @@
           "logo": "https://media.api-sports.io/football/leagues/534.png"
         },
         {
+          "id": 804,
+          "name": {
+            "en": "Caribbean Cup",
+            "ru": "Кубок Кариб"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/804.png"
+        },
+        {
+          "id": 1016,
+          "name": {
+            "en": "CAC Games",
+            "ru": "Игры CAC"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1016.png"
+        },
+        {
           "id": 1028,
           "name": {
             "en": "CONCACAF Central American Cup",
@@ -13154,6 +14362,33 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/767.png"
+        },
+        {
+          "id": 881,
+          "name": {
+            "en": "Olympics Men - Qualification Concacaf",
+            "ru": "Олимпийские игры - Квалификация КОНКАКАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/881.png"
+        },
+        {
+          "id": 772,
+          "name": {
+            "en": "Leagues Cup",
+            "ru": "Кубок лиг"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/772.png"
+        },
+        {
+          "id": 885,
+          "name": {
+            "en": "Campeones Cup",
+            "ru": "Кубок Чемпионов"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/885.png"
         },
         {
           "id": 537,
@@ -13174,6 +14409,15 @@
           "logo": "https://media.api-sports.io/football/leagues/963.png"
         },
         {
+          "id": 1066,
+          "name": {
+            "en": "CONCACAF U20 - Qualification",
+            "ru": "КОНКАКАФ U20 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1066.png"
+        },
+        {
           "id": 1136,
           "name": {
             "en": "CONCACAF Champions Cup - Women",
@@ -13192,6 +14436,24 @@
           "logo": "https://media.api-sports.io/football/leagues/1057.png"
         },
         {
+          "id": 1046,
+          "name": {
+            "en": "CONCACAF Gold Cup - Qualification - Women",
+            "ru": "Золотой кубок КОНКАКАФ - Квалификация - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1046.png"
+        },
+        {
+          "id": 927,
+          "name": {
+            "en": "World Cup - Women - Qualification Concacaf",
+            "ru": "Чемпионат Мира - Женщины - Квалификация КОНКАКАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/927.png"
+        },
+        {
           "id": 1001,
           "name": {
             "en": "CONCACAF Women U20",
@@ -13208,22 +14470,41 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/912.png"
+        },
+        {
+          "id": 805,
+          "name": {
+            "en": "Copa Centroamericana",
+            "ru": "Центральноамериканский кубок"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/805.png"
         }
       ]
     },
     {
       "name": {
-        "ru": "Южноамериканские турниры",
-        "en": "South American tournaments"
+        "ru": "Южная Америка",
+        "en": "South America"
       },
       "code": "SA-CONMEBOL",
       "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/CONMEBOL_logo_%282017%29.svg/200px-CONMEBOL_logo_%282017%29.svg.png",
       "leagues": [
         {
+          "id": 9,
+          "name": {
+            "en": "Copa America",
+            "ru": "Копа Америка"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        {
           "id": 13,
           "name": {
             "en": "CONMEBOL Copa Libertadores",
-            "ru": "Кубок Либертадорес КОНМЕБОЛ"
+            "ru": "Кубок Либертадорес КОНМЕБОЛ",
+            "category": ["Copa Libertadores"]
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/13.png"
@@ -13236,6 +14517,24 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        {
+          "id": 34,
+          "name": {
+            "en": "World Cup - Qualification South America",
+            "ru": "Чемпионат Мира - Квалификация Южная Америка"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        {
+          "id": 773,
+          "name": {
+            "en": "Sudamericano U20",
+            "ru": "Судамерикана U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/773.png"
         },
         {
           "id": 541,
@@ -13265,6 +14564,33 @@
           "logo": "https://media.api-sports.io/football/leagues/970.png"
         },
         {
+          "id": 951,
+          "name": {
+            "en": "South American Youth Games",
+            "ru": "Южноамериканские игры среди молодежи"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/951.png"
+        },
+        {
+          "id": 1060,
+          "name": {
+            "en": "CONMEBOL - Pre-Olympic Tournament",
+            "ru": "КОНМЕБОЛ - Предолимпийский турнир"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1060.png"
+        },
+        {
+          "id": 926,
+          "name": {
+            "en": "Copa America Femenina",
+            "ru": "Копа Америка - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/926.png"
+        },
+        {
           "id": 949,
           "name": {
             "en": "CONMEBOL Libertadores Femenina",
@@ -13290,6 +14616,242 @@
           },
           "type": "Cup",
           "logo": "https://media.api-sports.io/football/leagues/1081.png"
+        }
+      ]
+    },
+    {
+      "name": {
+        "ru": "Африка",
+        "en": "Africa"
+      },
+      "code": "A-CAF",
+      "flag": "https://upload.wikimedia.org/wikipedia/fr/8/8d/CAF-logo-2009.png",
+      "leagues": [
+        {
+          "id": 6,
+          "name": {
+            "en": "Africa Cup of Nations AFCON",
+            "ru": "Кубок африканских наций AFCON"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/6.png"
+        },
+        {
+          "id": 12,
+          "name": {
+            "en": "CAF Champions League",
+            "ru": "Лига чемпионов КАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/12.png"
+        },
+        {
+          "id": 20,
+          "name": {
+            "en": "CAF Confederation Cup",
+            "ru": "Кубок Конфедерации КАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/20.png"
+        },
+        {
+          "id": 533,
+          "name": {
+            "en": "CAF Super Cup",
+            "ru": "Суперкубок КАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/533.png"
+        },
+        {
+          "id": 19,
+          "name": {
+            "en": "African Nations Championship",
+            "ru": "Чемпионат Африканских Наций"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/19.png"
+        },
+        {
+          "id": 859,
+          "name": {
+            "en": "COSAFA Cup",
+            "ru": "Кубок COSAFA"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        {
+          "id": 29,
+          "name": {
+            "en": "World Cup - Qualification Africa",
+            "ru": "Чемпионат Мира - Квалификация Африка"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        {
+          "id": 36,
+          "name": {
+            "en": "Africa Cup of Nations - Qualification",
+            "ru": "Кубок Африканских Наций - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        {
+          "id": 538,
+          "name": {
+            "en": "Africa Cup of Nations U20",
+            "ru": "Кубок африканских наций U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        {
+          "id": 1015,
+          "name": {
+            "en": "CAF U23 Cup of Nations",
+            "ru": "Кубок африканских наций U23"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1015.png"
+        },
+        {
+          "id": 973,
+          "name": {
+            "en": "CAF Cup of Nations - U17",
+            "ru": "Кубок африканских наций - U17"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/973.png"
+        },
+        {
+          "id": 771,
+          "name": {
+            "en": "COSAFA U20 Championship",
+            "ru": "Чемпионат COSAFA - U20"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/771.png"
+        },
+        {
+          "id": 1043,
+          "name": {
+            "en": "African Football League",
+            "ru": "Африканская Футбольная Лига"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1043.png"
+        },
+        {
+          "id": 1047,
+          "name": {
+            "en": "Olympics Women - Qualification CAF",
+            "ru": "Олимпийские игры - Женщины - Квалификация КАФ"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1047.png"
+        },
+        {
+          "id": 535,
+          "name": {
+            "en": "CECAFA Senior Challenge Cup",
+            "ru": "Кубок вызова CECAFA среди взрослых"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/535.png"
+        },
+        {
+          "id": 869,
+          "name": {
+            "en": "CECAFA Club Cup",
+            "ru": "Клубный Кубок CECAFA"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/869.png"
+        },
+        {
+          "id": 953,
+          "name": {
+            "en": "Africa U23 Cup of Nations - Qualification",
+            "ru": "Кубок Африканских Наций U23 - Квалификация"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/953.png"
+        },
+        {
+          "id": 922,
+          "name": {
+            "en": "Africa Cup of Nations - Women",
+            "ru": "Кубок Африканских Наций - Женщины"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/922.png"
+        },
+        {
+          "id": 1072,
+          "name": {
+            "en": "All Africa Games",
+            "ru": "Африканские игры"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1072.png"
+        }
+      ]
+    },
+    {
+      "name": {
+        "ru": "Океания",
+        "en": "Oceania"
+      },
+      "code": "O-OFC",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Oceania_Football_Confederation_logo.svg/1200px-Oceania_Football_Confederation_logo.svg.png",
+      "leagues": [
+        {
+          "id": 27,
+          "name": {
+            "en": "OFC Champions League",
+            "ru": "Лига Чемпионов ОФК"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/27.png"
+        },
+        {
+          "id": 806,
+          "name": {
+            "en": "OFC Nations Cup",
+            "ru": "Кубок Наций ОФК"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/806.png"
+        },
+        {
+          "id": 33,
+          "name": {
+            "en": "World Cup - Qualification Oceania",
+            "ru": "Чемпионат Мира - Квалификация Океания"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        {
+          "id": 1122,
+          "name": {
+            "en": "OFC U19 Championship",
+            "ru": "Чемпионат ОФК - U19"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1122.png"
+        },
+        {
+          "id": 770,
+          "name": {
+            "en": "Pacific Games",
+            "ru": "Тихоокеанские игры"
+          },
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/770.png"
         }
       ]
     }

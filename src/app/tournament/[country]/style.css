@@ -17,9 +17,10 @@
     align-items: center;
     height: 100%;
     justify-content: space-between;
-}
-.tournament-country .head .left {
     width: 100%;
+}
+.tournament-country > .content > .tournamentBlock > .item > .fixtures {
+    width: 100% !important;
 }
 .tournament-country > .head .name {
     display: flex;
@@ -28,6 +29,15 @@
 .tournament-country > .head .right {
     display: flex;
     font-size: 0.7em;
+}
+.tournament-league .head .right ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    justify-content: center;
+}
+.tournament-league .head .right ul li {
+    margin: 0 10px 10px 10px;
 }
 .head .league-name {
     display: flex;
@@ -41,6 +51,11 @@
 }
 .item .head h3 {
     font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+.item .head img {
+    margin: 0 15px 0 0;
 }
 .content ul li a {
     color: rgba(0, 94, 180, 1);
@@ -68,7 +83,7 @@
 .content ul li:not(.content ul li:first-child) {
     border-top: 2px solid #ccc;
 }
-.content ul li > a {
+.content .tournament-list li > a {
     margin: 0 0 0 10px;
     font-size: 0.85em;
 }
@@ -104,10 +119,10 @@
 .content .left ul li a span {
     font-size: 0.85em;
 }
-.right input {
+/* .right input {
     margin: 10px 0;
     height: 30px;
-}
+} */
 h2 {
     font-size: 1em;
     display: flex;
@@ -115,6 +130,25 @@ h2 {
 }
 .tournament-country .carousel, .tournament-league .carousel {
     margin: 30px 0;
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures ul li {
+    margin: 0 !important;
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures ul li .right {
+    border: 0 !important;
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures {
+    margin: 0 !important;
+    height: auto !important;
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures span {
+    /* font-size: 0.8em !important; */
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures .left span, .tournament-country .content > .tournamentBlock > .item > .fixtures .right span {
+    /* font-size: 1.1em !important; */
+}
+.tournament-country .content > .tournamentBlock > .item > .fixtures .left, .tournament-country .content > .tournamentBlock > .item > .fixtures .right {
+    margin: 0 !important;
 }
 
 
@@ -130,6 +164,15 @@ h2 {
     }
     .head .rankLink {
         margin: 0 0 0 20px;
+    }
+    .tournament-country .content > .tournamentBlock > .item > .fixtures span {
+        /* font-size: 0.9em !important; */
+    }
+    .tournament-country .content > .tournamentBlock > .item > .fixtures .left span, .tournament-country .content > .tournamentBlock > .item > .fixtures .right span {
+        /* font-size: 1.2em !important; */
+    }
+    .tournament-country .content > .tournamentBlock > .item > .fixtures .left, .tournament-country .content > .tournamentBlock > .item > .fixtures .right {
+        width: 80px !important;
     }
 }
 
@@ -155,5 +198,8 @@ h2 {
     }
     .content .left ul li a span {
         font-size: 1em;
+    }
+    .tournament-league .head .right ul {
+        margin: 10px 0 0 0;
     }
 }

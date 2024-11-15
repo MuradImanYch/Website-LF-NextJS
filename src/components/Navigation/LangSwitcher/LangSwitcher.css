@@ -1,0 +1,14 @@
+.lang-switcher {
+    margin: 15px 0 25px 0;
+}
+.lang-switcher img {
+    min-height: 18px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+}
+
+@media (min-width: 1024px) {
+    .lang-switcher {
+        margin: 20px 0 5px 0;
+    }
+}

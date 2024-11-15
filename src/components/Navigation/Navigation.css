@@ -207,6 +207,19 @@ nav .wrap ul li .sub-menu {
 }
 
 
+@media (min-width: 1400px) {
+    nav {
+        min-width: 220px;
+    }
+    nav .wrap ul li a {
+        font-size: 0.85em;
+    }
+    nav .wrap ul li .sub-menu li a {
+        font-size: 0.8em;
+    }
+}
+
+
 @media (max-width: 1023px) {
     nav .wrap ul {
         overflow: scroll !important;

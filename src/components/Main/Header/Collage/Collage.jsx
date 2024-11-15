@@ -1,44 +1,55 @@
 import './Collage.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import cyrillicToTranslit from 'cyrillic-to-translit-js';
 import DateComponent from '@/components/News/Date/DateComponent';
+// import translate from '@/libs/translate';
+import config from '../../../../../public/conf.json';
 
-const Collage = async ({news}) => {
+const Collage = async ({news, lang}) => {
     const reversedData = await news;
 
     return (
         <section className="collage">
-            <article id="item-0" className="collage-item">
-                <Link href={`/news/read/${reversedData && reversedData[0]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[0]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={reversedData && reversedData[0]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={reversedData && reversedData[0]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={reversedData && reversedData[0]?.img} /></Link>
-                <h2><Link className='preview-title' href={`/news/read/${reversedData && reversedData[0]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[0]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{reversedData && reversedData[0]?.title}</Link></h2>
-                <Link href={`/tags/search/${reversedData && reversedData[0]?.category}`} className="tag">#{reversedData && reversedData[0]?.category}</Link>
-                <span className="date"><DateComponent dateProps={reversedData && reversedData[0].date} /></span>
-            </article>
-            <article id="item-1" className="collage-item">
-                <Link href={`/news/read/${reversedData && reversedData[1]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[1]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={reversedData && reversedData[1]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={reversedData && reversedData[1]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={reversedData && reversedData[1]?.img} /></Link>
-                <h2><Link className='preview-title' href={`/news/read/${reversedData && reversedData[1]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[1]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{reversedData && reversedData[1]?.title}</Link></h2>
-                <Link href={`/tags/search/${reversedData && reversedData[1]?.category}`} className="tag">#{reversedData && reversedData[1]?.category}</Link>
-                <span className="date"><DateComponent dateProps={reversedData && reversedData[1].date} /></span>
-            </article>
-            <article id="item-2" className="collage-item">
-                <Link href={`/news/read/${reversedData && reversedData[2]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[2]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={reversedData && reversedData[2]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={reversedData && reversedData[2]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={reversedData && reversedData[2]?.img} /></Link>
-                <h2><Link className='preview-title' href={`/news/read/${reversedData && reversedData[2]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[2]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{reversedData && reversedData[2]?.title}</Link></h2>
-                <Link href={`/tags/search/${reversedData && reversedData[2]?.category}`} className="tag">#{reversedData && reversedData[2]?.category}</Link>
-                <span className="date"><DateComponent dateProps={reversedData && reversedData[2].date} /></span>
-            </article>
-            <article id="item-3" className="collage-item">
-                <Link href={`/news/read/${reversedData && reversedData[3]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[3]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={reversedData && reversedData[3]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={reversedData && reversedData[3]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={reversedData && reversedData[3]?.img} /></Link>
-                <h2><Link className='preview-title' href={`/news/read/${reversedData && reversedData[3]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[3]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{reversedData && reversedData[3]?.title}</Link></h2>
-                <Link href={`/tags/search/${reversedData && reversedData[3]?.category}`} className="tag">#{reversedData && reversedData[3]?.category}</Link>
-                <span className="date"><DateComponent dateProps={reversedData && reversedData[3].date} /></span>
-            </article>
-            <article id="item-4" className="collage-item">
-                <Link href={`/news/read/${reversedData && reversedData[4]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[4]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}><Image placeholder={'empty'} title={reversedData && reversedData[4]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} alt={reversedData && reversedData[4]?.title.split(' ').slice(0, 5).toString().replaceAll(',', ' ')} width={800} height={800} src={reversedData && reversedData[4]?.img} /></Link>
-                <h2><Link className='preview-title' href={`/news/read/${reversedData && reversedData[4]?.id + '-' + cyrillicToTranslit().transform(reversedData && reversedData[4]?.title).replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-').toLowerCase().replace(/-+$/, '')}`}>{reversedData && reversedData[4]?.title}</Link></h2>
-                <Link href={`/tags/search/${reversedData && reversedData[4]?.category}`} className="tag">#{reversedData && reversedData[4]?.category}</Link>
-                <span className="date"><DateComponent dateProps={reversedData && reversedData[4].date} /></span>
-            </article>
+            {reversedData && reversedData.slice(0, 5).map(async (item, index) => (
+    <article key={index} id={`item-${index}`} className="collage-item">
+        <Link
+            href={lang === 'en' ? `/en/news/read/${item.urlEn}` : `/news/read/${item.url}`}
+        >
+            <Image
+    placeholder={'empty'}
+    title={
+        (lang === 'en' ? item.titleEn : item.title)
+            ?.split(' ')
+            .slice(0, 5)
+            .join(' ')
+    }
+    alt={
+        (lang === 'en' ? item.titleEn : item.title)
+            ?.split(' ')
+            .slice(0, 5)
+            .join(' ')
+    }
+    width={800}
+    height={800}
+    src={item.img !== "undefined" && item.img !== 'fotos/bb/42/e243d59e6e78c095477f3bbeb2e3fe65662aa5e971d88797595920.jpg' ? item.img.includes('http') ? item.img : `${config.domain}/assets/news/${item.img}` : ''}
+/>
+        </Link>
+        <h2>
+            <Link
+                className='preview-title'
+                href={lang === 'en' ? `/en/news/read/${item.urlEn}` : `/news/read/${item.url}`}
+            >
+                {lang === 'en' ? item.titleEn : item.title}
+            </Link>
+        </h2>
+        <Link href={lang === 'en' ? `/en/search/${item.categoryEn}` : `/search/${item.category}`} className="tag">
+            #{lang === 'en' ? item.categoryEn : item.category}
+        </Link>
+        <span className="date">
+            <DateComponent dateProps={item.date} />
+        </span>
+    </article>
+))}
         </section>
     );
 };

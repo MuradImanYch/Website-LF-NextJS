@@ -11,10 +11,10 @@ const SliderClient = () => {
             slidesPerView: 1,
             breakpoints: {
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 2.2,
                 },
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 3.2,
                 }
             }
         });

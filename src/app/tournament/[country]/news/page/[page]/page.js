@@ -3,6 +3,37 @@ import config from '../../../../../../../public/conf.json';
 import Image from "next/image";
 import Link from "next/link";
 import './style.css';
+import '../../../style.css';
+import { notFound } from 'next/navigation';
+
+export const generateMetadata = ({ params }) => {
+    const country = config.tournaments.filter(e => {
+        return e.name.en.toLowerCase().replaceAll(/\s+/g, '').replaceAll(/-/g, '') === params.country.replaceAll(/-/g, '');
+    });
+
+    if(country.length < 1) {
+        notFound();
+    }
+
+    return {
+        title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события - Страница ${params.page}`,
+        description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола. Страница ${params.page}`,
+        keywords: `новости футбола ${country[0]?.name.ru}, события турнира ${country[0]?.name.ru}, аналитика матчей ${country[0]?.name.ru}, Страница ${params.page}`,
+        openGraph: {
+          type: 'website',
+          title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события - Страница ${params.page}`,
+          description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола. Страница ${params.page}`
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: `Новости турнира ${country[0]?.name.ru} - свежие новости и события - Страница ${params.page}`,
+          description: `Узнайте последние новости турнира ${country[0]?.name.ru}: анализ, интервью и события из мира футбола. Страница ${params.page}`
+        },
+        alternates: {
+          canonical: params.page === '1' && `${config.domain}/tournament/${country[0].name.en.replace(/\s+/g, '-').toLowerCase()}/news`
+        }
+    };
+};
 
 const page = async ({params}) => {
     const country = config.tournaments.filter(e => {
@@ -17,7 +48,7 @@ const page = async ({params}) => {
         }
     });
 
-    const pagPathName = '/' + country[0].name.en.replace(/\s+/g, '-').toLowerCase();
+    const pagPathName = '/' + country[0].name.en.replace(/\s+/g, '-').toLowerCase() + '/';
     
     return (
         <div className='country-news tournament-country'>

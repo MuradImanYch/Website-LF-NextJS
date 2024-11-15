@@ -1,0 +1,28 @@
+.date-switcher {
+    margin: 15px 0 0 0;
+    display: flex;
+}
+.date-switcher input {
+    margin: 0 5px;
+}
+.date-switcher input, .date-switcher .arrow-button {
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.date-switcher .arrow-button {
+    width: 25px;
+    margin: 0 2px;
+}
+
+@media (min-width: 370px) {
+    .date-switcher .arrow-button {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 600px) {
+    .date-switcher {
+        margin: 0 0 0 0;
+    }
+}
