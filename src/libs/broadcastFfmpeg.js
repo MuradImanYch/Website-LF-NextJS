@@ -26,13 +26,19 @@ async function startStreamingAndRecording(url, broadcastLink) {
 
     // Запускаем процесс для каждой ссылки
     for (const [index, link] of broadcastLinks.entries()) {
-        const flag = link.split('_flag_')[1] || ''; // Получаем флаг
-
-        // Задаем ссылки Hls
+        // Добавляем ссылку в broadcastLink, как есть
         await db.query(
             'UPDATE broadcasts SET broadcastLink = CONCAT(IFNULL(broadcastLink, ""), " ", ?) WHERE url = ?',
-            [`https://legfootball.com/hls/${url}-${index}.m3u8_flag_${flag}`, url]
+            [link, url]
         );
+
+        // Проверяем, содержит ли ссылка значение "185.236.230.34:8280"
+        if (!link.includes("185.236.230.34:8280")) {
+            console.log(`Пропущена обработка для ссылки: ${link}`);
+            continue; // Пропустить обработку этой ссылки
+        }
+
+        const flag = link.split('_flag_')[1] || ''; // Получаем флаг
 
         // HLS процесс
         const hlsProcess = spawn('/usr/bin/ffmpeg', [
@@ -49,7 +55,7 @@ async function startStreamingAndRecording(url, broadcastLink) {
             '-hls_list_size', '6',
             '-hls_flags', 'delete_segments',
             '-hls_segment_filename', `/var/www/html/lf-nextjs/public/hls/${url}-${index}_%03d.ts`,
-            '-t', '01:00:00', // Ограничение времени для HLS
+            '-t', '02:30:00', // Ограничение времени для HLS
             `/var/www/html/lf-nextjs/public/hls/${url}-${index}.m3u8`
         ]);
 
@@ -62,7 +68,7 @@ async function startStreamingAndRecording(url, broadcastLink) {
             '-b:v', '600k',          // Низкий битрейт
             '-c:a', 'libvorbis',
             '-b:a', '96k',           // Низкий битрейт для аудио
-            '-t', '01:00:00',       // Ограничение времени для WebM
+            '-t', '02:30:00',       // Ограничение времени для WebM
             `/var/www/html/lf-nextjs/public/hls/${url}/${url}-${index}.webm`
         ]);
 
@@ -119,14 +125,14 @@ cron.schedule('*/1 * * * *', async () => { // Проверка каждую ми
     let connection;
     try {
         connection = await db.getConnection();
-        const [matches] = await connection.query('SELECT * FROM broadcasts WHERE status = "test"');
+        const [matches] = await connection.query('SELECT * FROM broadcasts WHERE status = "scheduled"');
         const now = new Date();
 
-        matches.slice(0, 1).forEach(match => {
+        matches.forEach(match => {
             const matchTime = new Date(`${new Date().toDateString()} ${match.time}`);
             const startTime = new Date(matchTime.getTime() - 15 * 60000); // Старт за 15 минут до матча
 
-            if (now >= startTime && match.status === 'test') {
+            if (now >= startTime && match.status === 'scheduled') {
                 startStreamingAndRecording(match.url, match.broadcastLink); // Запуск трансляции
             }
         });

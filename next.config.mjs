@@ -7,7 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
       {
-        protocol: "http", // если домен поддерживает только http
+        protocol: "https", // если домен поддерживает только https
         hostname: "legfootball.com",
         pathname: "/assets/news/**", // Путь к изображениям
       },

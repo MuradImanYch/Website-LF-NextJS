@@ -319,7 +319,7 @@ const autoGenerateNews = () => {
         })
         .catch(err => console.log(err));
 
-    }, 60000);
+    }, 12000000);
 }
 
 autoGenerateNews();
